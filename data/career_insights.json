@@ -1,0 +1,260 @@
+{
+  "Data Scientist": {
+    "role": "Data Scientist",
+    "salary_lpa": {
+      "entry": "₹8.5 - 14 LPA",
+      "mid": "₹15 - 26 LPA",
+      "senior": "₹28 - 52+ LPA",
+      "average": "₹16.8 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~320 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Computational Foundations (Level 0)",
+          "description": "Master Python fundamentals, NumPy vector operations, and essential Linear Algebra/Calculus.",
+          "status": "Foundations",
+          "actionable_project": "Build an exploratory data analysis report on 100k+ customer transactions with Pandas."
+        },
+        {
+          "milestone": "Month 3-4: Data Engineering & Querying (Level 1)",
+          "description": "Master relational database querying with SQL, window functions, and interactive data visualization.",
+          "status": "Intermediate",
+          "actionable_project": "Design a complete end-to-end SQL warehouse and interactive Tableau executive dashboard."
+        },
+        {
+          "milestone": "Month 5: Applied Machine Learning (Level 2)",
+          "description": "Train, evaluate, and tune regression, classification, random forests, and gradient boosted models.",
+          "status": "Advanced",
+          "actionable_project": "Productionize a churn prediction machine learning model with scikit-learn and cross-validation."
+        },
+        {
+          "milestone": "Month 6-7: Capstone & Portfolio (Job-Ready)",
+          "description": "Deploy deep neural network or LLM pipelines, package models into REST APIs, and publish GitHub portfolio.",
+          "status": "Job-Ready",
+          "actionable_project": "Deploy an end-to-end predictive API with FastAPI and Docker, accompanied by live documentation."
+        }
+      ]
+    }
+  },
+  "Machine Learning Engineer": {
+    "role": "Machine Learning Engineer",
+    "salary_lpa": {
+      "entry": "₹9.5 - 16 LPA",
+      "mid": "₹17 - 30 LPA",
+      "senior": "₹32 - 60+ LPA",
+      "average": "₹19.4 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "7 - 8 Months",
+      "weekly_commitment": "12 - 16 Hours/Week",
+      "total_hours": "~400 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Algorithms & Mathematics (Level 0)",
+          "description": "Solid understanding of computational complexity, matrix operations, gradient descent, and OOP Python.",
+          "status": "Foundations",
+          "actionable_project": "Implement linear regression and neural network backpropagation from scratch using raw NumPy."
+        },
+        {
+          "milestone": "Month 3-4: Classical ML & Model Optimization (Level 1)",
+          "description": "Feature engineering pipelines, scikit-learn, hyperparameter tuning, and cross-validation techniques.",
+          "status": "Intermediate",
+          "actionable_project": "Build a multi-class predictive engine with Bayesian optimization and automated feature selection."
+        },
+        {
+          "milestone": "Month 5-6: Deep Learning & Transformers (Level 2)",
+          "description": "PyTorch / TensorFlow, Convolutional Networks, Transformer architectures, and transfer learning.",
+          "status": "Advanced",
+          "actionable_project": "Fine-tune an open-source Large Language Model (e.g. Llama/Mistral) on domain-specific documentation."
+        },
+        {
+          "milestone": "Month 7-8: Production MLOps (Job-Ready)",
+          "description": "Model registry, containerization with Docker, Kubernetes orchestration, and monitoring model drift.",
+          "status": "Job-Ready",
+          "actionable_project": "Architect an automated CI/CD retraining pipeline with MLflow, Docker, and FastAPI on cloud servers."
+        }
+      ]
+    }
+  },
+  "Full Stack Web Developer": {
+    "role": "Full Stack Web Developer",
+    "salary_lpa": {
+      "entry": "₹6.5 - 12 LPA",
+      "mid": "₹13 - 22 LPA",
+      "senior": "₹24 - 45+ LPA",
+      "average": "₹14.2 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 15 Hours/Week",
+      "total_hours": "~280 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Frontend Foundations (Level 0)",
+          "description": "Modern HTML5 semantics, responsive CSS (Flexbox/Grid), and modern asynchronous ES6+ JavaScript.",
+          "status": "Foundations",
+          "actionable_project": "Build a responsive, accessible multi-page SaaS marketing interface with pure JavaScript."
+        },
+        {
+          "milestone": "Month 3: React Ecosystem & State Management (Level 1)",
+          "description": "Component hierarchies, custom hooks, client-side routing, and Redux Toolkit state stores.",
+          "status": "Intermediate",
+          "actionable_project": "Create an interactive dashboard with real-time API polling, dark mode, and state persistence."
+        },
+        {
+          "milestone": "Month 4-5: Backend Engineering & Databases (Level 2)",
+          "description": "Node.js/Express or Python Django, RESTful API design, relational SQL/NoSQL schema modeling, and JWT auth.",
+          "status": "Advanced",
+          "actionable_project": "Design a secure multi-tenant REST API with JWT authentication, rate limiting, and PostgreSQL."
+        },
+        {
+          "milestone": "Month 6: Full Stack Integration & Deployment (Job-Ready)",
+          "description": "Docker containerization, automated testing, cloud deployment, and full-stack capstone.",
+          "status": "Job-Ready",
+          "actionable_project": "Deploy a complete SaaS platform with payment gateway integration, automated tests, and Docker on VPS."
+        }
+      ]
+    }
+  },
+  "Cloud Solutions Architect": {
+    "role": "Cloud Solutions Architect",
+    "salary_lpa": {
+      "entry": "₹8.0 - 15 LPA",
+      "mid": "₹16 - 28 LPA",
+      "senior": "₹30 - 55+ LPA",
+      "average": "₹18.0 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~300 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Operating Systems & Networking (Level 0)",
+          "description": "Linux system administration, bash scripting, TCP/IP, DNS, routing, and network security groups.",
+          "status": "Foundations",
+          "actionable_project": "Configure a hardened Linux server with SSH key auth, firewall policies, and automated log backups."
+        },
+        {
+          "milestone": "Month 3-4: AWS / GCP Core Architecture (Level 1)",
+          "description": "Compute (EC2/GCE), Object storage (S3/GCS), High Availability VPCs, IAM security, and Serverless.",
+          "status": "Intermediate",
+          "actionable_project": "Architect a multi-availability zone fault-tolerant web tier with load balancers and auto-scaling."
+        },
+        {
+          "milestone": "Month 5: Containers & Orchestration (Level 2)",
+          "description": "Docker multi-stage builds, Kubernetes pod deployment, ingress controllers, and Helm charts.",
+          "status": "Advanced",
+          "actionable_project": "Deploy a microservices cluster on Kubernetes with automated service discovery and health checks."
+        },
+        {
+          "milestone": "Month 6-7: Infrastructure as Code & SRE (Job-Ready)",
+          "description": "Automate cloud provisioning with Terraform, CI/CD pipeline automation, and site reliability monitoring.",
+          "status": "Job-Ready",
+          "actionable_project": "Write reusable Terraform modules provisioning a complete production cloud VPC and database cluster."
+        }
+      ]
+    }
+  },
+  "Cybersecurity Analyst": {
+    "role": "Cybersecurity Analyst",
+    "salary_lpa": {
+      "entry": "₹7.0 - 13 LPA",
+      "mid": "₹14 - 24 LPA",
+      "senior": "₹26 - 48+ LPA",
+      "average": "₹15.5 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~270 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Security Principles & Packet Analysis (Level 0)",
+          "description": "TCP/IP handshake analysis, Wireshark packet dissection, symmetric/asymmetric cryptography, and firewalls.",
+          "status": "Foundations",
+          "actionable_project": "Analyze captured PCAP network traffic to detect unauthorized port scans and suspicious payload transfers."
+        },
+        {
+          "milestone": "Month 3-4: SIEM Operations & Defense (Level 1)",
+          "description": "Log ingestion, threat intelligence mapping, incident response workflows, and intrusion detection (IDS/IPS).",
+          "status": "Intermediate",
+          "actionable_project": "Set up a SIEM dashboard (Elastic/Splunk) and write detection rules for brute-force login attempts."
+        },
+        {
+          "milestone": "Month 5: Web Application Security & OWASP (Level 2)",
+          "description": "Vulnerability scanning, SQL injection, Cross-Site Scripting (XSS), CSRF, and Burp Suite proxy testing.",
+          "status": "Advanced",
+          "actionable_project": "Conduct a comprehensive vulnerability audit on a mock web application and draft a remediation report."
+        },
+        {
+          "milestone": "Month 6: Security Audit & Practical Testing (Job-Ready)",
+          "description": "Privilege escalation, security compliance (ISO 27001/NIST), and mock technical security interviews.",
+          "status": "Job-Ready",
+          "actionable_project": "Perform a complete penetration test and present an executive-level risk assessment and fix playbook."
+        }
+      ]
+    }
+  },
+  "Mobile App Developer": {
+    "role": "Mobile App Developer",
+    "salary_lpa": {
+      "entry": "₹6.5 - 12 LPA",
+      "mid": "₹13 - 23 LPA",
+      "senior": "₹25 - 46+ LPA",
+      "average": "₹14.8 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 15 Hours/Week",
+      "total_hours": "~280 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Programming Foundations & OOP (Level 0)",
+          "description": "Object-oriented design patterns, memory management, and asynchronous control flow in Dart or Kotlin.",
+          "status": "Foundations",
+          "actionable_project": "Build an algorithmic command-line data manager implementing standard OOP design patterns."
+        },
+        {
+          "milestone": "Month 3-4: Mobile UI & State Management (Level 1)",
+          "description": "Flutter responsive widgets, declarative animations, navigation routing, and state stores (Riverpod/Bloc).",
+          "status": "Intermediate",
+          "actionable_project": "Build a responsive iOS & Android mobile shopping application with smooth animations and cart state."
+        },
+        {
+          "milestone": "Month 5: Native Integrations & Cloud (Level 2)",
+          "description": "Firebase backend services, push notifications, local SQLite/Room caching, and native hardware sensors.",
+          "status": "Advanced",
+          "actionable_project": "Integrate real-time cloud chat with Firebase Authentication, offline caching, and push notifications."
+        },
+        {
+          "milestone": "Month 6: App Store Deployment & Capstone (Job-Ready)",
+          "description": "Automated build signing, CI/CD with Fastlane, unit & widget testing, and production app store release.",
+          "status": "Job-Ready",
+          "actionable_project": "Publish a completed production mobile app to Google Play Store / TestFlight with clean architecture."
+        }
+      ]
+    }
+  }
+}

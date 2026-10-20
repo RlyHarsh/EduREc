@@ -1,0 +1,18 @@
+# ==============================================================================
+# EduRec: AI-Powered Course Recommendation System
+# ==============================================================================
+#
+# CORE RUNTIME DEPENDENCIES:
+# The core server and cold-start recommendation engine are engineered using
+# pure Python 3 standard libraries (http.server, json, math, re, urllib, collections).
+# NO external third-party libraries are required to run the core application!
+#
+# Minimum Recommended Python Version: Python 3.8+
+#
+# OPTIONAL DEVELOPMENT & CI TOOLS:
+# Install these for testing, code formatting, and linting:
+pytest>=7.4.0
+pytest-cov>=4.1.0
+flake8>=6.1.0
+black>=23.9.0
+requests>=2.31.0

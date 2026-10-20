@@ -1,0 +1,214 @@
+{
+  "Data Scientist": {
+    "title": "Data Scientist Career Roadmap",
+    "description": "Step-by-step roadmap to become a professional Data Scientist in 2026.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Programming & Mathematics",
+        "description": "Master core computational and quantitative thinking essential for data modeling.",
+        "topics": ["Python Syntax", "Data Structures", "Linear Algebra", "Calculus", "Probability & Statistics"],
+        "recommended_course_ids": ["CRS-03", "CRS-11"]
+      },
+      {
+        "step": 2,
+        "phase": "Data Manipulation",
+        "title": "Data Wrangling & SQL Analysis",
+        "description": "Learn to extract, clean, query, and transform unstructured and relational datasets.",
+        "topics": ["Pandas", "NumPy", "SQL Queries", "Relational DBs", "Data Cleaning", "Matplotlib / Seaborn"],
+        "recommended_course_ids": ["CRS-04"]
+      },
+      {
+        "step": 3,
+        "phase": "Core Machine Learning",
+        "title": "Supervised & Unsupervised Modeling",
+        "description": "Train predictive algorithms, evaluate generalization, and prevent overfitting.",
+        "topics": ["Regression", "Classification", "Decision Trees", "Ensembles", "Scikit-Learn", "Cross-Validation"],
+        "recommended_course_ids": ["CRS-01", "CRS-17"]
+      },
+      {
+        "step": 4,
+        "phase": "Advanced Specialization",
+        "title": "Deep Learning & Production Systems",
+        "description": "Work with neural networks, modern NLP transformers, and real-world deployment.",
+        "topics": ["Neural Networks", "PyTorch / TensorFlow", "Transformers & LLMs", "Feature Stores", "MLOps"],
+        "recommended_course_ids": ["CRS-02", "CRS-05"]
+      }
+    ]
+  },
+  "Machine Learning Engineer": {
+    "title": "Machine Learning Engineer Roadmap",
+    "description": "Architect, scale, and operationalize machine learning models in production.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Computer Science & Applied Math",
+        "description": "Strong foundational programming, memory management, and linear algebra.",
+        "topics": ["Python", "Algorithms & Complexity", "Linear Algebra", "Matrix Calculus", "Vector Optimization"],
+        "recommended_course_ids": ["CRS-03", "CRS-11"]
+      },
+      {
+        "step": 2,
+        "phase": "Core ML",
+        "title": "Machine Learning Algorithms & Optimization",
+        "description": "Implement classical machine learning models and cost function optimization.",
+        "topics": ["Gradient Descent", "Supervised Learning", "Regularization", "Scikit-Learn", "Model Metrics"],
+        "recommended_course_ids": ["CRS-01", "CRS-17"]
+      },
+      {
+        "step": 3,
+        "phase": "Deep Learning",
+        "title": "Deep Neural Networks & Architectures",
+        "description": "Design Convolutional and Recurrent Networks, Transformers, and LLMs.",
+        "topics": ["CNNs", "RNNs", "PyTorch", "Attention Mechanisms", "Hugging Face", "Model Fine-tuning"],
+        "recommended_course_ids": ["CRS-02", "CRS-05"]
+      },
+      {
+        "step": 4,
+        "phase": "Engineering & MLOps",
+        "title": "Containerization & Cloud Serving",
+        "description": "Containerize models, setup automated CI/CD pipelines, and monitor model drift.",
+        "topics": ["Docker", "Kubernetes", "FastAPI Serving", "GCP Vertex AI", "Experiment Tracking", "CI/CD"],
+        "recommended_course_ids": ["CRS-09", "CRS-08"]
+      }
+    ]
+  },
+  "Full Stack Web Developer": {
+    "title": "Full Stack Web Developer Roadmap",
+    "description": "Master end-to-end web engineering across frontend, backend, databases, and deployment.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Frontend Basics",
+        "title": "HTML, CSS & Modern JavaScript",
+        "description": "Build responsive, accessible user interfaces with semantic markup and async JS.",
+        "topics": ["HTML5", "CSS3 / Flexbox / Grid", "ES6+ JavaScript", "DOM API", "Responsive Web Design"],
+        "recommended_course_ids": ["CRS-06"]
+      },
+      {
+        "step": 2,
+        "phase": "Client Frameworks",
+        "title": "React Ecosystem & State Architecture",
+        "description": "Component-driven development, custom hooks, client-side routing, and state stores.",
+        "topics": ["React 18", "Hooks & Context", "Redux Toolkit", "Component Lifecycle", "REST Integration"],
+        "recommended_course_ids": ["CRS-20"]
+      },
+      {
+        "step": 3,
+        "phase": "Backend Engineering",
+        "title": "Server Logic, APIs & Databases",
+        "description": "Design performant backend REST APIs, authentication layers, and database schemas.",
+        "topics": ["Node.js / Express", "Python Django", "SQL & Relational DBs", "MongoDB", "JWT Auth"],
+        "recommended_course_ids": ["CRS-07", "CRS-12"]
+      },
+      {
+        "step": 4,
+        "phase": "DevOps & Deployment",
+        "title": "Cloud Hosting & Containers",
+        "description": "Containerize full-stack services with Docker and manage automated deployments.",
+        "topics": ["Docker", "Container Orchestration", "CI/CD", "Nginx", "Cloud Hosting"],
+        "recommended_course_ids": ["CRS-09"]
+      }
+    ]
+  },
+  "Cloud Solutions Architect": {
+    "title": "Cloud & DevOps Solutions Architect Roadmap",
+    "description": "Design fault-tolerant, scalable, and secure cloud infrastructures across AWS and GCP.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Networking & Systems Fundamentals",
+        "description": "Core computer architecture, network topology, TCP/IP, and Linux administration.",
+        "topics": ["Linux OS", "TCP/IP & DNS", "SSH & Bash", "Virtualization", "Security Groups"],
+        "recommended_course_ids": ["CRS-03"]
+      },
+      {
+        "step": 2,
+        "phase": "Public Cloud Core",
+        "title": "AWS & GCP Infrastructure Design",
+        "description": "Architect compute instances, high-availability VPC networks, and managed storage.",
+        "topics": ["AWS EC2 & S3", "IAM Permissions", "VPC Peering", "Serverless Functions", "Load Balancing"],
+        "recommended_course_ids": ["CRS-13", "CRS-08"]
+      },
+      {
+        "step": 3,
+        "phase": "Container Orchestration",
+        "title": "Docker Containers & Kubernetes",
+        "description": "Standardize runtime environments with Docker and orchestrate microservices at scale.",
+        "topics": ["Docker Compose", "Kubernetes Pods & Services", "Ingress Controllers", "Helm Charts", "Service Mesh"],
+        "recommended_course_ids": ["CRS-09"]
+      },
+      {
+        "step": 4,
+        "phase": "Infrastructure as Code",
+        "title": "Data Pipelines & Automated Operations",
+        "description": "Automate cloud deployment with Terraform and manage enterprise big data warehouses.",
+        "topics": ["Terraform", "GitOps", "BigQuery / Data Engineering", "SRE Best Practices", "Monitoring"],
+        "recommended_course_ids": ["CRS-18"]
+      }
+    ]
+  },
+  "Cybersecurity Analyst": {
+    "title": "Cybersecurity Analyst Roadmap",
+    "description": "Protect network infrastructure, defend data assets, and conduct penetration tests.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Networking & Security Architecture",
+        "description": "Understand network protocols, packet inspection, firewalls, and cryptographic basics.",
+        "topics": ["Network Protocols", "Wireshark", "Cryptography & Ciphers", "Linux Security", "TCP Handshakes"],
+        "recommended_course_ids": ["CRS-10"]
+      },
+      {
+        "step": 2,
+        "phase": "Defensive Security",
+        "title": "Security Operations & Incident Response",
+        "description": "Monitor logs, detect intrusions with SIEM platforms, and formulate triage responses.",
+        "topics": ["SIEM Tools", "Log Analysis", "Threat Intelligence", "Incident Handling", "Vulnerability Scanning"],
+        "recommended_course_ids": ["CRS-10"]
+      },
+      {
+        "step": 3,
+        "phase": "Offensive Security",
+        "title": "Web Application Penetration Testing",
+        "description": "Identify and exploit OWASP Top 10 vulnerabilities in modern web applications and APIs.",
+        "topics": ["OWASP Top 10", "Burp Suite", "SQL Injection", "XSS & CSRF", "Authentication Flaws"],
+        "recommended_course_ids": ["CRS-14"]
+      }
+    ]
+  },
+  "Mobile App Developer": {
+    "title": "Mobile App Developer Roadmap",
+    "description": "Build high-performance, polished native and cross-platform mobile applications.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Object-Oriented Programming & Logic",
+        "description": "Solid algorithmic foundations, clean OOP, and data structures.",
+        "topics": ["Programming Paradigms", "Data Structures", "Memory Management", "Algorithms"],
+        "recommended_course_ids": ["CRS-03"]
+      },
+      {
+        "step": 2,
+        "phase": "Cross-Platform",
+        "title": "Flutter & Dart App Development",
+        "description": "Build reactive multi-platform applications for iOS and Android with single codebase.",
+        "topics": ["Dart Language", "Flutter Widgets", "State Management (Provider/Riverpod)", "Mobile UI/UX", "REST APIs"],
+        "recommended_course_ids": ["CRS-15"]
+      },
+      {
+        "step": 3,
+        "phase": "Native Android",
+        "title": "Modern Kotlin & Jetpack Compose",
+        "description": "Master declarative native Android UI, asynchronous Coroutines, and local Room databases.",
+        "topics": ["Kotlin", "Jetpack Compose", "Coroutines & Flow", "MVVM Architecture", "Room DB"],
+        "recommended_course_ids": ["CRS-16"]
+      }
+    ]
+  }
+}
