@@ -5,11 +5,11 @@
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Standard%20Lib)-E0F2FE.svg)](server.py)
 [![Design](https://img.shields.io/badge/Design-Minimal%20Black%20%26%20Light%20Blue-0F172A.svg)](public/style.css)
 
-EduRec is an intelligent, real-time Course Recommendation and Career Decision Platform specifically engineered to solve the **User Cold-Start Problem** in educational technology.
+EduRec is an intelligent, real-time Course Recommendation and Career Decision Platform specifically engineered to solve the **User Cold-Start Problem** across all major engineering disciplines—from **Mechanical and Automotive**, **Biotechnology and Biomedical**, **Electrical and Electronics (ECE/EEE)**, **Civil and Infrastructure**, **Chemical and Materials**, **Aerospace**, and **Robotics**, to **Computer Science and IT**.
 
-When a brand-new student visits an educational portal, traditional collaborative filtering algorithms fail because the user has no historical enrollments, ratings, or watch times. EduRec solves this at first interaction through an onboarding survey that collects the student's career target, experience level, specific skills, and free-text interests. It processes these inputs through a **TF-IDF Vector Space Model**, computes **Cosine Similarity** against authentic item profiles, calculates **Jaccard skill overlaps**, and applies **knowledge-based level matching**.
+When a brand-new student visits an educational portal, traditional collaborative filtering algorithms fail because the user has no historical enrollments, ratings, or watch times. EduRec solves this at first interaction through a multi-disciplinary onboarding survey that collects the student's engineering discipline, career target, experience level, specific skills, and free-text interests. It processes these inputs through a **TF-IDF Vector Space Model**, computes **Cosine Similarity** against authentic item profiles, calculates **Jaccard skill overlaps**, and applies **knowledge-based level and domain matching**.
 
-Alongside personalized course matches, EduRec equips learners with real-time career market intelligence: **Expected Salary in LPA**, **Estimated Time to Master**, a **0 to Job-Ready 4-Milestone Roadmap**, and a **Free vs. Paid Course Comparison Matrix**.
+Alongside personalized course matches, EduRec equips learners with real-time career market intelligence: **Expected Salary in LPA**, **Estimated Time to Master**, an interactive **0 to Job-Ready 4-Milestone Roadmap**, and a **Free vs. Paid Course Comparison Matrix**.
 
 ---
 
@@ -77,9 +77,9 @@ EduREc/
 │   └── workflows/
 │       └── ci.yml              # GitHub Actions CI workflow (Python 3.9-3.12 matrix)
 ├── data/
-│   ├── courses.json            # 20 curated courses with ratings, prices, and skills
-│   ├── roadmaps.json           # Career roadmap stages and topics
-│   └── career_insights.json    # Salaries (LPA), time to master, 0-to-job-ready milestones
+│   ├── courses.json            # 58 curated engineering courses with ratings, prices, and skills
+│   ├── roadmaps.json           # 22 multidisciplinary career roadmap tracks and milestones
+│   └── career_insights.json    # Salaries (LPA), time to master, 0-to-job-ready milestones for all branches
 ├── public/
 │   ├── index.html              # Clean single-page application layout
 │   ├── style.css               # White, black, and light bluish design system

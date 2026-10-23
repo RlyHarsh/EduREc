@@ -55,14 +55,28 @@ class RecommenderHTTPHandler(http.server.SimpleHTTPRequestHandler):
         elif path == "/api/career-insights":
             query_params = urllib.parse.parse_qs(parsed_url.query)
             role = query_params.get("role", ["Data Scientist"])[0]
-            role_insights = insights_data.get(role, insights_data.get("Data Scientist", {}))
+            role_insights = insights_data.get(role)
+            if not role_insights:
+                for k, v in insights_data.items():
+                    if k.lower() == role.lower():
+                        role_insights = v
+                        break
+            if not role_insights:
+                role_insights = insights_data.get("Data Scientist", {})
             self._send_json_response(role_insights)
             return
 
         elif path == "/api/roadmap":
             query_params = urllib.parse.parse_qs(parsed_url.query)
             role = query_params.get("role", ["Data Scientist"])[0]
-            roadmap = roadmaps_data.get(role, roadmaps_data.get("Data Scientist", {}))
+            roadmap = roadmaps_data.get(role)
+            if not roadmap:
+                for k, v in roadmaps_data.items():
+                    if k.lower() == role.lower():
+                        roadmap = v
+                        break
+            if not roadmap:
+                roadmap = roadmaps_data.get("Data Scientist", {})
 
             courses_by_id = {c["id"]: c for c in recommender.courses}
             enriched_stages = []
@@ -123,6 +137,7 @@ class RecommenderHTTPHandler(http.server.SimpleHTTPRequestHandler):
                 self._send_json_response({"error": "Invalid JSON or payload encoding"}, status=400)
                 return
 
+            engineering_branch = str(payload.get("engineering_branch", "Computer Science & IT"))[:100]
             target_role = str(payload.get("target_role", ""))[:100]
             experience_level = str(payload.get("experience_level", "Beginner"))[:50]
             selected_skills = [str(s)[:50] for s in payload.get("selected_skills", [])][:50]
@@ -135,6 +150,7 @@ class RecommenderHTTPHandler(http.server.SimpleHTTPRequestHandler):
                     experience_level=experience_level,
                     selected_skills=selected_skills,
                     interests_text=interests_text,
+                    engineering_branch=engineering_branch,
                     top_k=15
                 )
             except Exception as e:
@@ -146,6 +162,7 @@ class RecommenderHTTPHandler(http.server.SimpleHTTPRequestHandler):
                 "user": {
                     "name": str(payload.get("name", "Student"))[:100],
                     "email": str(payload.get("email", ""))[:100],
+                    "engineering_branch": engineering_branch,
                     "target_role": target_role,
                     "experience_level": experience_level,
                     "selected_skills": selected_skills,

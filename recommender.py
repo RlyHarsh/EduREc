@@ -134,19 +134,32 @@ class ColdStartCourseRecommender:
 
     def recommend(
         self,
-        target_role: str = "",
+        profile_or_role: Any = "",
         experience_level: str = "Beginner",
         selected_skills: List[str] = None,
         interests_text: str = "",
-        top_k: int = 12
+        engineering_branch: str = "",
+        top_k: int = 15,
+        **kwargs
     ) -> List[Dict[str, Any]]:
         """
-        Solves the User Cold-Start Problem by constructing a rich user requirement vector
-        and executing Content-Based + Knowledge-Constraint scoring in real-time.
+        Solves the User Cold-Start Problem across all engineering disciplines by constructing
+        a rich user requirement vector and executing Content-Based + Knowledge-Constraint scoring in real-time.
         """
+        if isinstance(profile_or_role, dict):
+            profile = profile_or_role
+            target_role = profile.get("target_role", "")
+            experience_level = profile.get("experience_level", experience_level)
+            selected_skills = profile.get("selected_skills", selected_skills) or []
+            interests_text = profile.get("interests_text", interests_text)
+            engineering_branch = profile.get("engineering_branch", engineering_branch)
+            top_k = kwargs.get("top_k", top_k)
+        else:
+            target_role = str(profile_or_role or "")
+
         selected_skills = selected_skills or []
         skills_str = " ".join(selected_skills)
-        user_query_text = f"{target_role} {target_role} {skills_str} {skills_str} {interests_text}"
+        user_query_text = f"{target_role} {target_role} {engineering_branch} {engineering_branch} {skills_str} {skills_str} {interests_text}"
         user_tokens = self._tokenize(user_query_text)
         user_vec = self._vectorize_tokens(user_tokens)
 
@@ -164,9 +177,16 @@ class ColdStartCourseRecommender:
             # 3. Knowledge-based Level Compatibility
             level_score = self._level_affinity(experience_level, course.get("level", "Beginner"))
 
-            # 4. Composite Cold-Start Recommendation Score
-            # 50% Content Cosine Similarity + 35% Skill Match + 15% Level Affinity
-            final_score = (0.50 * cos_sim) + (0.35 * skill_score) + (0.15 * level_score)
+            # 4. Domain & Engineering Branch Alignment
+            branch_boost = 0.0
+            if engineering_branch:
+                branch_tokens = self._tokenize(engineering_branch)
+                course_domain_lower = course.get("domain", "").lower()
+                if any(bt in course_domain_lower for bt in branch_tokens if len(bt) > 3):
+                    branch_boost = 0.08
+
+            # 5. Composite Cold-Start Recommendation Score
+            final_score = (0.45 * cos_sim) + (0.35 * skill_score) + (0.12 * level_score) + branch_boost
 
             # Generate natural explainable AI justification
             reasons = []
@@ -174,6 +194,8 @@ class ColdStartCourseRecommender:
                 reasons.append(f"teaches your target skills: {', '.join(matched_skills[:3])}")
             if target_role and any(t in course['domain'].lower() or t in course['title'].lower() for t in self._tokenize(target_role)):
                 reasons.append(f"aligns with your goal of {target_role}")
+            elif engineering_branch and any(bt in course.get("domain", "").lower() for bt in self._tokenize(engineering_branch) if len(bt) > 3):
+                reasons.append(f"curated for {engineering_branch} engineering specialization")
             if not reasons:
                 reasons.append(f"strong foundation for {experience_level} learners in {course['domain']}")
 

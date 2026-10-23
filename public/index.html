@@ -20,9 +20,9 @@
       </div>
 
       <form id="onboarding-form">
-        <!-- Basic User Details -->
+        <!-- Basic User Details & Engineering Branch -->
         <div class="form-section">
-          <label class="section-label">1. Student Information</label>
+          <label class="section-label">1. Student Information & Discipline</label>
           <div class="input-row">
             <div class="input-group">
               <label for="student-name">Full Name</label>
@@ -31,6 +31,21 @@
             <div class="input-group">
               <label for="student-email">Email Address</label>
               <input type="email" id="student-email" placeholder="alex@university.edu" value="alex@university.edu" required>
+            </div>
+          </div>
+          <div class="input-row" style="margin-top: 14px;">
+            <div class="input-group" style="width: 100%;">
+              <label for="engineering-branch">Engineering Discipline / Major</label>
+              <select id="engineering-branch" required>
+                <option value="Mechanical & Automotive Engineering">Mechanical & Automotive Engineering</option>
+                <option value="Biotechnology & Biomedical Engineering">Biotechnology & Biomedical Engineering</option>
+                <option value="Computer Science & Information Technology" selected>Computer Science & Information Technology</option>
+                <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering (ECE / EEE)</option>
+                <option value="Civil & Infrastructure Engineering">Civil & Infrastructure Engineering</option>
+                <option value="Chemical & Materials Engineering">Chemical & Materials Engineering</option>
+                <option value="Aerospace & Aeronautical Engineering">Aerospace & Aeronautical Engineering</option>
+                <option value="Robotics & Mechatronics Engineering">Robotics & Mechatronics Engineering</option>
+              </select>
             </div>
           </div>
         </div>
@@ -42,12 +57,44 @@
             <div class="input-group">
               <label for="target-role">What is your primary career goal?</label>
               <select id="target-role" required>
-                <option value="Data Scientist" selected>Data Scientist / AI Specialist</option>
-                <option value="Machine Learning Engineer">Machine Learning Engineer</option>
-                <option value="Full Stack Web Developer">Full Stack Web Developer</option>
-                <option value="Cloud Solutions Architect">Cloud & DevOps Architect</option>
-                <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
-                <option value="Mobile App Developer">Mobile App Developer</option>
+                <optgroup label="Mechanical & Automotive Engineering">
+                  <option value="Mechanical Design & CAD Engineer">Mechanical Design & CAD Engineer</option>
+                  <option value="Thermal & Fluid Systems (CFD) Engineer">Thermal & Fluid Systems (CFD) Engineer</option>
+                  <option value="Automotive & Electric Vehicle (EV) Engineer">Automotive & Electric Vehicle (EV) Engineer</option>
+                </optgroup>
+                <optgroup label="Biotechnology & Biomedical Engineering">
+                  <option value="Bioinformatics & Computational Biologist">Bioinformatics & Computational Biologist</option>
+                  <option value="Bioprocess & Fermentation Engineer">Bioprocess & Fermentation Engineer</option>
+                  <option value="Biomedical Devices & Instrumentation Engineer">Biomedical Devices & Instrumentation Engineer</option>
+                </optgroup>
+                <optgroup label="Computer Science & Information Technology">
+                  <option value="Data Scientist" selected>Data Scientist / AI Specialist</option>
+                  <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                  <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+                  <option value="Cloud Solutions Architect">Cloud & DevOps Architect</option>
+                  <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                  <option value="Mobile App Developer">Mobile App Developer</option>
+                </optgroup>
+                <optgroup label="Electrical & Electronics (ECE / EEE)">
+                  <option value="VLSI & Embedded Systems Engineer">VLSI & Embedded Systems Engineer</option>
+                  <option value="Power Systems & Renewable Energy Engineer">Power Systems & Renewable Energy Engineer</option>
+                  <option value="IoT & Hardware Systems Engineer">IoT & Hardware Systems Engineer</option>
+                </optgroup>
+                <optgroup label="Civil & Infrastructure Engineering">
+                  <option value="Structural Analysis & BIM Engineer">Structural Analysis & BIM Engineer</option>
+                  <option value="Transportation & Infrastructure Engineer">Transportation & Infrastructure Engineer</option>
+                  <option value="Environmental & Water Resources Engineer">Environmental & Water Resources Engineer</option>
+                </optgroup>
+                <optgroup label="Chemical & Materials Engineering">
+                  <option value="Chemical Process & Plant Design Engineer">Chemical Process & Plant Design Engineer</option>
+                  <option value="Materials Science & Nanotechnology Engineer">Materials Science & Nanotechnology Engineer</option>
+                </optgroup>
+                <optgroup label="Aerospace & Aeronautical Engineering">
+                  <option value="Aerospace & Propulsion Engineer">Aerospace & Propulsion Engineer</option>
+                </optgroup>
+                <optgroup label="Robotics & Mechatronics Engineering">
+                  <option value="Robotics & Autonomous Systems Engineer">Robotics & Autonomous Systems Engineer</option>
+                </optgroup>
               </select>
             </div>
             <div class="input-group">
@@ -64,6 +111,17 @@
         <!-- Skills of Interest -->
         <div class="form-section">
           <label class="section-label">3. Skills You Want to Learn</label>
+          <div class="skills-filter-tabs" id="skills-filter-tabs">
+            <button type="button" class="skill-filter-pill active" data-cat="All">All Disciplines</button>
+            <button type="button" class="skill-filter-pill" data-cat="CS">CS & IT</button>
+            <button type="button" class="skill-filter-pill" data-cat="Mechanical">Mechanical</button>
+            <button type="button" class="skill-filter-pill" data-cat="Biotech">Biotech</button>
+            <button type="button" class="skill-filter-pill" data-cat="Electrical">Electrical / ECE</button>
+            <button type="button" class="skill-filter-pill" data-cat="Civil">Civil</button>
+            <button type="button" class="skill-filter-pill" data-cat="Chemical">Chemical / Mat</button>
+            <button type="button" class="skill-filter-pill" data-cat="Aerospace">Aerospace</button>
+            <button type="button" class="skill-filter-pill" data-cat="Robotics">Robotics</button>
+          </div>
           <p class="section-desc">Select key competencies you want to acquire (click to select):</p>
           <div id="skills-cloud" class="skills-cloud">
             <!-- Dynamically populated skills -->
@@ -73,7 +131,7 @@
         <!-- Free-text Learning Goals -->
         <div class="form-section">
           <label class="section-label" for="interests-text">4. Specific Learning Goals / Interests</label>
-          <textarea id="interests-text" rows="3" placeholder="e.g. I want to build deep neural networks, work with PyTorch, and understand supervised machine learning.">I want to master Python programming, analyze datasets with Pandas, and build predictive machine learning models.</textarea>
+          <textarea id="interests-text" rows="3" placeholder="e.g. Master SolidWorks CAD and FEA with ANSYS, or Biopython sequence analysis and CRISPR, or Full Stack React & Cloud...">I want to master Python programming, analyze datasets with Pandas, and build predictive machine learning models.</textarea>
         </div>
 
         <!-- Submit Button -->
@@ -120,6 +178,7 @@
             </div>
             <p class="profile-email" id="profile-display-email">alex@university.edu</p>
             <div class="profile-tags-row">
+              <span class="profile-tag">Branch: <strong id="profile-display-branch">Computer Science & IT</strong></span>
               <span class="profile-tag">Goal: <strong id="profile-display-role">Data Scientist</strong></span>
               <span class="profile-tag">Level: <strong id="profile-display-level">Beginner</strong></span>
             </div>
@@ -139,7 +198,7 @@
           </div>
         </div>
 
-        <!-- Career Market & Decision Metrics (Salary LPA, Time to Master, 0 to Job-Ready) -->
+        <!-- Career Market & Decision Metrics (Salary LPA, Time to Master, 0 to Job-Ready, Demand & Supply, AI Security) -->
         <div class="career-metrics-bar">
           <div class="metric-card">
             <div class="metric-content">
@@ -157,6 +216,26 @@
             </div>
           </div>
 
+          <div class="metric-card">
+            <div class="metric-content">
+              <span class="metric-title">Future Demand & Supply</span>
+              <div class="metric-val" id="metric-demand-growth" style="color: var(--light-blue-accent);">+24% 5-Yr Growth</div>
+              <div class="metric-sub" id="metric-market-supply">Surging Demand • Talent Deficit</div>
+            </div>
+          </div>
+
+          <div class="metric-card highlight-card-ai" id="metric-ai-card">
+            <div class="metric-content">
+              <span class="metric-title">AI Job Security Rating</span>
+              <div class="metric-val" id="metric-ai-threat-val">91% AI-Secure</div>
+              <div class="metric-sub" id="metric-ai-threat-sub">Low AI Threat • High Human Moat</div>
+            </div>
+            <button type="button" class="btn-ai-threat-toggle" id="btn-toggle-ai-threat">
+              <span>AI Threat Intel</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+
           <div class="metric-card highlight-card">
             <div class="metric-content">
               <span class="metric-title">0 to Job-Ready Track</span>
@@ -164,9 +243,84 @@
               <div class="metric-sub">4 Practical Milestone Capstones</div>
             </div>
             <button type="button" class="btn-readiness-toggle" id="btn-toggle-readiness">
-              <span>View Milestones</span>
+              <span>Milestones</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
+          </div>
+        </div>
+
+        <!-- Expandable AI Threat & Future Demand Intelligence Drawer -->
+        <div class="ai-threat-drawer" id="ai-threat-drawer" style="display: none;">
+          <div class="drawer-header-flex">
+            <div>
+              <h3 class="drawer-heading">AI Job Security & Future Demand Outlook for <span id="ai-drawer-role-text">Data Scientist</span></h3>
+              <p class="drawer-sub">Objective analysis of automation risk, human moat defensibility, and 5-year industry hiring projections.</p>
+            </div>
+            <div class="ai-score-badge-box">
+              <div class="ai-score-circle" id="ai-score-circle">88%</div>
+              <span class="ai-score-caption">AI Security Index</span>
+            </div>
+          </div>
+
+          <div class="ai-intel-grid">
+            <!-- Left: Human Moat & Irreplaceability -->
+            <div class="ai-intel-card">
+              <div class="intel-card-header">
+                <div class="intel-icon">🛡️</div>
+                <div>
+                  <h4>Why Human Engineers Are Irreplaceable (Human Moat)</h4>
+                  <p>Core responsibilities, physical testing, and legal liabilities AI cannot execute:</p>
+                </div>
+              </div>
+              <ul class="human-moat-list" id="human-moat-container">
+                <!-- Dynamically populated human moat points -->
+              </ul>
+            </div>
+
+            <!-- Right: Future Demand & Supply Dynamics -->
+            <div class="ai-intel-card">
+              <div class="intel-card-header">
+                <div class="intel-icon">📈</div>
+                <div>
+                  <h4>Future Job Market Demand & Supply Outlook</h4>
+                  <p>5-year industry expansion trajectory, hiring velocity, and talent deficit:</p>
+                </div>
+              </div>
+              <div class="market-dynamics-box">
+                <div class="market-dynamic-row">
+                  <span class="m-label">5-Year Projected Growth:</span>
+                  <span class="m-val" id="intel-growth-rate">+24%</span>
+                </div>
+                <div class="market-dynamic-row">
+                  <span class="m-label">Industry Demand:</span>
+                  <span class="m-val" id="intel-demand-status">Surging Global Demand</span>
+                </div>
+                <div class="market-dynamic-row">
+                  <span class="m-label">Talent Supply Deficit:</span>
+                  <span class="m-val" id="intel-supply-status">Acute Talent Shortage</span>
+                </div>
+                <div class="market-dynamic-row">
+                  <span class="m-label">Talent Scarcity Score:</span>
+                  <span class="m-val" id="intel-shortage-index">8.8 / 10</span>
+                </div>
+              </div>
+              <div class="intel-market-summary" id="intel-market-summary">
+                <!-- Dynamic market summary -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom: AI Copilot Advantage vs Routine Automation -->
+          <div class="ai-comparison-strip">
+            <div class="ai-strip-col">
+              <span class="strip-tag automates">What AI Automates in This Role:</span>
+              <p id="intel-ai-automates"></p>
+            </div>
+            <div class="ai-strip-divider"></div>
+            <div class="ai-strip-col">
+              <span class="strip-tag copilot">How AI Empowers You (Your Superpower):</span>
+              <p id="intel-ai-copilot"></p>
+            </div>
           </div>
         </div>
 
@@ -212,12 +366,15 @@
           </div>
 
           <div class="filter-pills" id="domain-filters">
-            <button class="filter-btn active" data-domain="All">All Domains</button>
-            <button class="filter-btn" data-domain="AI & Machine Learning">AI & ML</button>
-            <button class="filter-btn" data-domain="Data Science & Analytics">Data Science</button>
-            <button class="filter-btn" data-domain="Web & Full Stack Engineering">Web Dev</button>
-            <button class="filter-btn" data-domain="Cloud & DevOps">Cloud</button>
-            <button class="filter-btn" data-domain="Cybersecurity">Security</button>
+            <button class="filter-btn active" data-domain="All">All Disciplines</button>
+            <button class="filter-btn" data-domain="Mechanical & Automotive Engineering">Mechanical</button>
+            <button class="filter-btn" data-domain="Biotechnology & Biomedical Engineering">Biotech</button>
+            <button class="filter-btn" data-domain="Computer Science & Information Technology">CS & IT</button>
+            <button class="filter-btn" data-domain="Electrical & Electronics Engineering">Electrical / ECE</button>
+            <button class="filter-btn" data-domain="Civil & Infrastructure Engineering">Civil</button>
+            <button class="filter-btn" data-domain="Chemical & Materials Engineering">Chemical</button>
+            <button class="filter-btn" data-domain="Aerospace & Aeronautical Engineering">Aerospace</button>
+            <button class="filter-btn" data-domain="Robotics & Mechatronics Engineering">Robotics</button>
           </div>
         </div>
 

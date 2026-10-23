@@ -2,10 +2,10 @@
   "Data Scientist": {
     "role": "Data Scientist",
     "salary_lpa": {
-      "entry": "₹8.5 - 14 LPA",
-      "mid": "₹15 - 26 LPA",
-      "senior": "₹28 - 52+ LPA",
-      "average": "₹16.8 LPA"
+      "entry": "\u20b98.5 - 14 LPA",
+      "mid": "\u20b915 - 26 LPA",
+      "senior": "\u20b928 - 52+ LPA",
+      "average": "\u20b916.8 LPA"
     },
     "time_to_master": {
       "duration_months": "6 - 7 Months",
@@ -40,101 +40,155 @@
           "actionable_project": "Deploy an end-to-end predictive API with FastAPI and Docker, accompanied by live documentation."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Moderate Threat (High Copilot Advantage)",
+      "ai_security_score": 78,
+      "automation_risk_percent": 22,
+      "threat_badge_class": "badge-moderate",
+      "demand_level": "High Demand",
+      "supply_level": "Competitive Entry / Talent Shortage in Senior",
+      "growth_rate_5yr": "+21% Projected Growth",
+      "talent_shortage_index": "7.5 / 10",
+      "human_moat": [
+        "Translating ambiguous executive business challenges into quantitative modeling frameworks",
+        "Data provenance, algorithmic bias detection, and ethical privacy governance (GDPR)",
+        "C-suite executive storytelling, causal inference, and domain-specific decision justification"
+      ],
+      "what_ai_automates": "Basic exploratory data analysis (EDA), automated data cleaning scripts, and routine SQL queries.",
+      "ai_copilot_advantage": "AI code interpreters and automated machine learning (AutoML) handle hyperparameter tuning, allowing Data Scientists to focus on high-impact strategic analytics.",
+      "market_summary": "While basic dashboarding is partially automated, demand for advanced data scientists capable of fine-tuning enterprise LLMs and causal modeling remains very strong."
     }
   },
   "Machine Learning Engineer": {
     "role": "Machine Learning Engineer",
     "salary_lpa": {
-      "entry": "₹9.5 - 16 LPA",
-      "mid": "₹17 - 30 LPA",
-      "senior": "₹32 - 60+ LPA",
-      "average": "₹19.4 LPA"
+      "entry": "\u20b99.5 - 16 LPA",
+      "mid": "\u20b918 - 32 LPA",
+      "senior": "\u20b935 - 65+ LPA",
+      "average": "\u20b919.4 LPA"
     },
     "time_to_master": {
       "duration_months": "7 - 8 Months",
-      "weekly_commitment": "12 - 16 Hours/Week",
-      "total_hours": "~400 Hours"
+      "weekly_commitment": "12 - 15 Hours/Week",
+      "total_hours": "~380 Hours"
     },
     "job_readiness": {
       "level": "0 to Job-Ready in 4 Milestones",
       "stages": [
         {
-          "milestone": "Month 1-2: Algorithms & Mathematics (Level 0)",
-          "description": "Solid understanding of computational complexity, matrix operations, gradient descent, and OOP Python.",
+          "milestone": "Month 1-2: Core Math & Python Software Patterns (Level 0)",
+          "description": "Object-oriented Python, algorithms, matrix calculus, and probability theory.",
           "status": "Foundations",
-          "actionable_project": "Implement linear regression and neural network backpropagation from scratch using raw NumPy."
+          "actionable_project": "Implement vector linear regression and gradient descent from scratch in pure NumPy."
         },
         {
-          "milestone": "Month 3-4: Classical ML & Model Optimization (Level 1)",
-          "description": "Feature engineering pipelines, scikit-learn, hyperparameter tuning, and cross-validation techniques.",
+          "milestone": "Month 3-4: Classical ML & Deep Learning (Level 1)",
+          "description": "Supervised, unsupervised algorithms, PyTorch tensors, backprop, and convolutional/recurrent networks.",
           "status": "Intermediate",
-          "actionable_project": "Build a multi-class predictive engine with Bayesian optimization and automated feature selection."
+          "actionable_project": "Train an image classification ResNet on transfer learning with PyTorch and augmentations."
         },
         {
-          "milestone": "Month 5-6: Deep Learning & Transformers (Level 2)",
-          "description": "PyTorch / TensorFlow, Convolutional Networks, Transformer architectures, and transfer learning.",
+          "milestone": "Month 5-6: NLP, Transformers & Generative Models (Level 2)",
+          "description": "Self-attention mechanism, fine-tuning HuggingFace transformers, and vector embeddings.",
           "status": "Advanced",
-          "actionable_project": "Fine-tune an open-source Large Language Model (e.g. Llama/Mistral) on domain-specific documentation."
+          "actionable_project": "Fine-tune an open-source LLM with LoRA on domain-specific support ticket data."
         },
         {
           "milestone": "Month 7-8: Production MLOps (Job-Ready)",
-          "description": "Model registry, containerization with Docker, Kubernetes orchestration, and monitoring model drift.",
+          "description": "Model serving, continuous training CI/CD, drift monitoring with MLflow, Docker, and Kubernetes.",
           "status": "Job-Ready",
-          "actionable_project": "Architect an automated CI/CD retraining pipeline with MLflow, Docker, and FastAPI on cloud servers."
+          "actionable_project": "Build an automated ML pipeline with automated testing, drift alerts, and Triton inference server."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 94,
+      "automation_risk_percent": 6,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Explosive Demand",
+      "supply_level": "Severe Talent Shortage",
+      "growth_rate_5yr": "+38% Projected Growth",
+      "talent_shortage_index": "9.7 / 10",
+      "human_moat": [
+        "Designing, architecting, and optimizing the very AI models that automate other tasks",
+        "Low-level GPU kernel optimization (CUDA, Triton) and distributed model training infrastructure",
+        "Preventing model hallucinations, concept drift, and securing AI inference pipelines against adversarial attacks"
+      ],
+      "what_ai_automates": "Standard model boilerplate code and basic PyTorch training loop templates.",
+      "ai_copilot_advantage": "ML engineers leverage AI coding assistants to draft custom loss functions and synthetic training datasets, accelerating model iteration.",
+      "market_summary": "As the builders of the AI revolution, ML and MLOps engineers command highest-tier market salaries with intense global recruiting competition."
     }
   },
   "Full Stack Web Developer": {
     "role": "Full Stack Web Developer",
     "salary_lpa": {
-      "entry": "₹6.5 - 12 LPA",
-      "mid": "₹13 - 22 LPA",
-      "senior": "₹24 - 45+ LPA",
-      "average": "₹14.2 LPA"
+      "entry": "\u20b96.5 - 12 LPA",
+      "mid": "\u20b914 - 24 LPA",
+      "senior": "\u20b926 - 45+ LPA",
+      "average": "\u20b914.2 LPA"
     },
     "time_to_master": {
       "duration_months": "5 - 6 Months",
-      "weekly_commitment": "10 - 15 Hours/Week",
+      "weekly_commitment": "10 - 12 Hours/Week",
       "total_hours": "~280 Hours"
     },
     "job_readiness": {
       "level": "0 to Job-Ready in 4 Milestones",
       "stages": [
         {
-          "milestone": "Month 1-2: Frontend Foundations (Level 0)",
-          "description": "Modern HTML5 semantics, responsive CSS (Flexbox/Grid), and modern asynchronous ES6+ JavaScript.",
+          "milestone": "Month 1-2: Modern Web Fundamentals (Level 0)",
+          "description": "Semantic HTML5, CSS Grid/Flexbox, ES6+ JavaScript, and responsive layout architectures.",
           "status": "Foundations",
-          "actionable_project": "Build a responsive, accessible multi-page SaaS marketing interface with pure JavaScript."
+          "actionable_project": "Build a responsive SaaS marketing landing page with pure CSS and interactive components."
         },
         {
-          "milestone": "Month 3: React Ecosystem & State Management (Level 1)",
-          "description": "Component hierarchies, custom hooks, client-side routing, and Redux Toolkit state stores.",
+          "milestone": "Month 3: Frontend Framework Mastery (Level 1)",
+          "description": "React.js / Next.js, state management, hooks, and RESTful API data fetching.",
           "status": "Intermediate",
-          "actionable_project": "Create an interactive dashboard with real-time API polling, dark mode, and state persistence."
+          "actionable_project": "Create a fully functional kanban task management app with React, Tailwind, and local storage."
         },
         {
-          "milestone": "Month 4-5: Backend Engineering & Databases (Level 2)",
-          "description": "Node.js/Express or Python Django, RESTful API design, relational SQL/NoSQL schema modeling, and JWT auth.",
+          "milestone": "Month 4: Backend Engineering & Databases (Level 2)",
+          "description": "Node.js/Express, REST and GraphQL APIs, JWT authentication, and PostgreSQL relational schemas.",
           "status": "Advanced",
-          "actionable_project": "Design a secure multi-tenant REST API with JWT authentication, rate limiting, and PostgreSQL."
+          "actionable_project": "Architect an authenticated e-commerce backend API with Stripe checkout and PostgreSQL."
         },
         {
-          "milestone": "Month 6: Full Stack Integration & Deployment (Job-Ready)",
-          "description": "Docker containerization, automated testing, cloud deployment, and full-stack capstone.",
+          "milestone": "Month 5-6: DevOps, Testing & Cloud Deployment (Job-Ready)",
+          "description": "Docker containerization, CI/CD GitHub Actions, unit/integration testing, and cloud deployment.",
           "status": "Job-Ready",
-          "actionable_project": "Deploy a complete SaaS platform with payment gateway integration, automated tests, and Docker on VPS."
+          "actionable_project": "Deploy a complete multi-tenant collaborative web app with live WebSockets on AWS/Vercel."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Moderate Threat (High Copilot Advantage)",
+      "ai_security_score": 74,
+      "automation_risk_percent": 26,
+      "threat_badge_class": "badge-moderate",
+      "demand_level": "High Demand",
+      "supply_level": "Competitive Entry / Shortage in Full-Stack Architects",
+      "growth_rate_5yr": "+17% Projected Growth",
+      "talent_shortage_index": "7.2 / 10",
+      "human_moat": [
+        "Complex microservices system architecture, distributed database consistency, and concurrency",
+        "Multi-tenant security, zero-trust authentication (OAuth/SAML), and HIPAA/SOC2 compliance",
+        "User experience empathy, custom component animations, and product product-market fit iteration"
+      ],
+      "what_ai_automates": "Boilerplate CRUD endpoints, basic responsive CSS styling, and standard unit test generation.",
+      "ai_copilot_advantage": "Full Stack developers using AI code assistants ship full products 2.5x faster, managing the entire stack from database to mobile frontend.",
+      "market_summary": "Entry-level HTML/CSS coders face displacement, but full-stack system architects who wield AI tools to build scalable production apps are in higher demand than ever."
     }
   },
   "Cloud Solutions Architect": {
     "role": "Cloud Solutions Architect",
     "salary_lpa": {
-      "entry": "₹8.0 - 15 LPA",
-      "mid": "₹16 - 28 LPA",
-      "senior": "₹30 - 55+ LPA",
-      "average": "₹18.0 LPA"
+      "entry": "\u20b98.0 - 14 LPA",
+      "mid": "\u20b916 - 28 LPA",
+      "senior": "\u20b932 - 58+ LPA",
+      "average": "\u20b918.5 LPA"
     },
     "time_to_master": {
       "duration_months": "6 - 7 Months",
@@ -145,116 +199,1146 @@
       "level": "0 to Job-Ready in 4 Milestones",
       "stages": [
         {
-          "milestone": "Month 1-2: Operating Systems & Networking (Level 0)",
-          "description": "Linux system administration, bash scripting, TCP/IP, DNS, routing, and network security groups.",
+          "milestone": "Month 1-2: Linux, Networking & Scripting (Level 0)",
+          "description": "Linux system administration, TCP/IP, VPC routing, subnets, and Bash/Python automation.",
           "status": "Foundations",
-          "actionable_project": "Configure a hardened Linux server with SSH key auth, firewall policies, and automated log backups."
+          "actionable_project": "Configure a hardened Linux server with automated backup cron jobs and firewall rules."
         },
         {
-          "milestone": "Month 3-4: AWS / GCP Core Architecture (Level 1)",
-          "description": "Compute (EC2/GCE), Object storage (S3/GCS), High Availability VPCs, IAM security, and Serverless.",
+          "milestone": "Month 3-4: Core Cloud Architecture (Level 1)",
+          "description": "AWS / GCP compute, auto-scaling groups, load balancers, and managed database services.",
           "status": "Intermediate",
-          "actionable_project": "Architect a multi-availability zone fault-tolerant web tier with load balancers and auto-scaling."
+          "actionable_project": "Design a highly available multi-tier web application spanning two availability zones."
         },
         {
-          "milestone": "Month 5: Containers & Orchestration (Level 2)",
-          "description": "Docker multi-stage builds, Kubernetes pod deployment, ingress controllers, and Helm charts.",
+          "milestone": "Month 5: Infrastructure as Code & Containers (Level 2)",
+          "description": "Terraform provisioning, Docker multi-stage builds, and Kubernetes orchestration.",
           "status": "Advanced",
-          "actionable_project": "Deploy a microservices cluster on Kubernetes with automated service discovery and health checks."
+          "actionable_project": "Automate complete VPC and EKS cluster provisioning using reusable Terraform modules."
         },
         {
-          "milestone": "Month 6-7: Infrastructure as Code & SRE (Job-Ready)",
-          "description": "Automate cloud provisioning with Terraform, CI/CD pipeline automation, and site reliability monitoring.",
+          "milestone": "Month 6-7: Cloud Security & Enterprise Migration (Job-Ready)",
+          "description": "IAM least privilege, disaster recovery, hybrid networking, and cost optimization.",
           "status": "Job-Ready",
-          "actionable_project": "Write reusable Terraform modules provisioning a complete production cloud VPC and database cluster."
+          "actionable_project": "Deliver an enterprise architectural blueprint and disaster recovery failover plan."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 87,
+      "automation_risk_percent": 13,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Surging Demand",
+      "supply_level": "High Talent Shortage",
+      "growth_rate_5yr": "+24% Projected Growth",
+      "talent_shortage_index": "8.6 / 10",
+      "human_moat": [
+        "Enterprise hybrid-cloud disaster recovery architectures and cross-region failover",
+        "Multi-million dollar cloud budget optimization (FinOps) and negotiated vendor contracts",
+        "Mission-critical banking/healthcare compliance, data sovereignty, and security governance"
+      ],
+      "what_ai_automates": "Standard Terraform resource definitions and basic cloud monitoring alerts.",
+      "ai_copilot_advantage": "AI infrastructure analyzers identify unutilized cloud instances and suggest zero-downtime container migration plans automatically.",
+      "market_summary": "Massive enterprise migrations to multi-cloud environments and sovereign cloud architectures ensure sustained corporate demand."
     }
   },
   "Cybersecurity Analyst": {
     "role": "Cybersecurity Analyst",
     "salary_lpa": {
-      "entry": "₹7.0 - 13 LPA",
-      "mid": "₹14 - 24 LPA",
-      "senior": "₹26 - 48+ LPA",
-      "average": "₹15.5 LPA"
+      "entry": "\u20b97.0 - 12 LPA",
+      "mid": "\u20b914 - 24 LPA",
+      "senior": "\u20b926 - 48+ LPA",
+      "average": "\u20b915.2 LPA"
     },
     "time_to_master": {
       "duration_months": "5 - 6 Months",
-      "weekly_commitment": "10 - 14 Hours/Week",
+      "weekly_commitment": "10 - 12 Hours/Week",
       "total_hours": "~270 Hours"
     },
     "job_readiness": {
       "level": "0 to Job-Ready in 4 Milestones",
       "stages": [
         {
-          "milestone": "Month 1-2: Security Principles & Packet Analysis (Level 0)",
-          "description": "TCP/IP handshake analysis, Wireshark packet dissection, symmetric/asymmetric cryptography, and firewalls.",
+          "milestone": "Month 1-2: Security Foundations & Network Defense (Level 0)",
+          "description": "Threat landscapes, OSI model vulnerabilities, packet analysis with Wireshark, and cryptography.",
           "status": "Foundations",
-          "actionable_project": "Analyze captured PCAP network traffic to detect unauthorized port scans and suspicious payload transfers."
+          "actionable_project": "Perform network packet capture analysis to isolate simulated ARP poisoning and brute-force attacks."
         },
         {
-          "milestone": "Month 3-4: SIEM Operations & Defense (Level 1)",
-          "description": "Log ingestion, threat intelligence mapping, incident response workflows, and intrusion detection (IDS/IPS).",
+          "milestone": "Month 3: SIEM & SOC Incident Response (Level 1)",
+          "description": "Log ingestion, correlation rules, Splunk / Chronicle analysis, and alert triage playbooks.",
           "status": "Intermediate",
-          "actionable_project": "Set up a SIEM dashboard (Elastic/Splunk) and write detection rules for brute-force login attempts."
+          "actionable_project": "Configure an open-source SIEM to ingest server logs and alert on unauthorized privilege escalations."
         },
         {
-          "milestone": "Month 5: Web Application Security & OWASP (Level 2)",
-          "description": "Vulnerability scanning, SQL injection, Cross-Site Scripting (XSS), CSRF, and Burp Suite proxy testing.",
+          "milestone": "Month 4: Vulnerability Assessment & Pen-Testing (Level 2)",
+          "description": "Nessus scans, OWASP Top 10 web vulnerabilities, SQL injection, and Nmap network reconnaissance.",
           "status": "Advanced",
-          "actionable_project": "Conduct a comprehensive vulnerability audit on a mock web application and draft a remediation report."
+          "actionable_project": "Execute a structured vulnerability audit on a vulnerable test application and write remediation report."
         },
         {
-          "milestone": "Month 6: Security Audit & Practical Testing (Job-Ready)",
-          "description": "Privilege escalation, security compliance (ISO 27001/NIST), and mock technical security interviews.",
+          "milestone": "Month 5-6: Security Governance & Threat Hunting (Job-Ready)",
+          "description": "MITRE ATT&CK mapping, incident handling procedures, and compliance frameworks (ISO 27001).",
           "status": "Job-Ready",
-          "actionable_project": "Perform a complete penetration test and present an executive-level risk assessment and fix playbook."
+          "actionable_project": "Develop an end-to-end incident containment and forensic analysis walkthrough with MITRE mapping."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 93,
+      "automation_risk_percent": 7,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Explosive Demand",
+      "supply_level": "Severe Global Shortage (3.5M+ unfilled roles)",
+      "growth_rate_5yr": "+33% Projected Growth",
+      "talent_shortage_index": "9.6 / 10",
+      "human_moat": [
+        "Real-time adversary psychology analysis, threat actor attribution, and cyber warfare defenses",
+        "Live forensic investigation of zero-day exploits and ransomware incident negotiation",
+        "Physical network tap air-gapping, hardware security modules (HSM), and defense clearance"
+      ],
+      "what_ai_automates": "Low-fidelity SIEM alert triage and standard firewall rule syntax checks.",
+      "ai_copilot_advantage": "Security analysts use generative AI to synthesize threat intelligence reports and decode obfuscated malware payloads in minutes.",
+      "market_summary": "As cyber threats weaponize generative AI, human security analysts are the frontline defense, resulting in one of the lowest unemployment rates in technology."
     }
   },
   "Mobile App Developer": {
     "role": "Mobile App Developer",
     "salary_lpa": {
-      "entry": "₹6.5 - 12 LPA",
-      "mid": "₹13 - 23 LPA",
-      "senior": "₹25 - 46+ LPA",
-      "average": "₹14.8 LPA"
+      "entry": "\u20b96.5 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b925 - 42+ LPA",
+      "average": "\u20b913.8 LPA"
     },
     "time_to_master": {
       "duration_months": "5 - 6 Months",
-      "weekly_commitment": "10 - 15 Hours/Week",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~260 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Mobile Platform Languages (Level 0)",
+          "description": "Kotlin / Swift fundamentals, object-oriented concepts, and reactive UI paradigms.",
+          "status": "Foundations",
+          "actionable_project": "Build an offline expense calculator app with custom animations and input validation."
+        },
+        {
+          "milestone": "Month 3: App UI/UX & Native Component Lifecycles (Level 1)",
+          "description": "Jetpack Compose / SwiftUI layouts, navigation graphs, and background service management.",
+          "status": "Intermediate",
+          "actionable_project": "Develop a multi-screen news app consuming public REST APIs with infinite scrolling."
+        },
+        {
+          "milestone": "Month 4: Offline Storage & State Management (Level 2)",
+          "description": "Room / CoreData local caching, repository pattern, Coroutines / Async-Await, and push notifications.",
+          "status": "Advanced",
+          "actionable_project": "Implement an offline-first fitness tracker with background sensor tracking and sync queue."
+        },
+        {
+          "milestone": "Month 5-6: App Store Deployment & Testing (Job-Ready)",
+          "description": "Automated UI testing with Espresso/XCTest, App Store & Google Play release pipelines.",
+          "status": "Job-Ready",
+          "actionable_project": "Publish a polished native app on Google Play / TestFlight with Firebase crash analytics."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low-to-Moderate Threat",
+      "ai_security_score": 80,
+      "automation_risk_percent": 20,
+      "threat_badge_class": "badge-moderate",
+      "demand_level": "High Demand",
+      "supply_level": "Moderate Supply",
+      "growth_rate_5yr": "+19% Projected Growth",
+      "talent_shortage_index": "7.6 / 10",
+      "human_moat": [
+        "Hardware sensor integration (camera LiDAR, Bluetooth peripherals, biometric FaceID)",
+        "Offline battery drain optimization, memory leak profiling, and app store guideline approvals",
+        "Intuitive gesture UX, micro-interactions, and accessibility (voice-over / screen readers)"
+      ],
+      "what_ai_automates": "Basic Jetpack Compose / SwiftUI UI layouts and JSON API data serialization models.",
+      "ai_copilot_advantage": "AI copilots draft cross-platform UI views instantly, allowing developers to focus on smooth 120Hz native animations and offline syncing.",
+      "market_summary": "Ongoing enterprise mobility needs, health apps, and smart automotive in-car dashboards keep demand robust for experienced native app developers."
+    }
+  },
+  "Mechanical Design & CAD Engineer": {
+    "role": "Mechanical Design & CAD Engineer",
+    "salary_lpa": {
+      "entry": "\u20b95.5 - 10 LPA",
+      "mid": "\u20b912 - 20 LPA",
+      "senior": "\u20b922 - 38+ LPA",
+      "average": "\u20b913.5 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~270 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Engineering Graphics & Parametric 3D CAD (Level 0)",
+          "description": "Master orthographic projections, parametric sketches, 3D part modeling, and SolidWorks / Fusion 360.",
+          "status": "Foundations",
+          "actionable_project": "Model a complete multi-component gearbox assembly with parametric mates and BOM."
+        },
+        {
+          "milestone": "Month 3: GD&T & Manufacturing Tolerancing (Level 1)",
+          "description": "Apply ASME Y14.5 geometric dimensioning and tolerancing, datum reference frames, and stack-up analysis.",
+          "status": "Intermediate",
+          "actionable_project": "Generate production-ready manufacturing drawings with GD&T callouts for a CNC machined hub."
+        },
+        {
+          "milestone": "Month 4: Finite Element Analysis & Structural Simulation (Level 2)",
+          "description": "Perform linear static stress, deflection, and fatigue calculations using ANSYS Mechanical.",
+          "status": "Advanced",
+          "actionable_project": "Perform topology optimization on an aircraft mounting bracket reducing weight by 25% while maintaining safety factor."
+        },
+        {
+          "milestone": "Month 5-6: Design for Manufacturing (DFM) & Portfolio (Job-Ready)",
+          "description": "Sheet metal, plastic injection molding design, CAM toolpaths, and industrial design reviews.",
+          "status": "Job-Ready",
+          "actionable_project": "Deliver a complete product design package: 3D CAD, DFM analysis, FEA verification, and CNC G-code."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 89,
+      "automation_risk_percent": 11,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Very High Demand",
+      "supply_level": "Talent Shortage",
+      "growth_rate_5yr": "+18% Projected Growth",
+      "talent_shortage_index": "8.2 / 10",
+      "human_moat": [
+        "Physical fabrication, CNC toolpathing, and tolerance stack-up validation",
+        "Statutory engineering certification & legal safety liabilities (ASME / ISO)",
+        "Hands-on mechanical failure forensics and physical test rig verification"
+      ],
+      "what_ai_automates": "Baseline 2D drawing conversions and routine parametric sketch constraints.",
+      "ai_copilot_advantage": "Generative CAD design creates lightweight lattice structures 4x faster, elevating the engineer to chief design architect.",
+      "market_summary": "Massive hardware manufacturing push, defense engineering, and consumer robotics are creating a sustained global shortage of skilled CAD/FEA engineers."
+    }
+  },
+  "Thermal & Fluid Systems (CFD) Engineer": {
+    "role": "Thermal & Fluid Systems (CFD) Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b924 - 42+ LPA",
+      "average": "\u20b914.8 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~310 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Applied Thermodynamics & Fluid Mechanics (Level 0)",
+          "description": "Mass and energy balances, boundary layer theory, Navier-Stokes equations, and heat exchanger sizing.",
+          "status": "Foundations",
+          "actionable_project": "Calculate pressure drops and heat transfer coefficients across an industrial shell-and-tube heat exchanger."
+        },
+        {
+          "milestone": "Month 3-4: Computational Meshing & Boundary Physics (Level 1)",
+          "description": "Structured/unstructured prism layer meshing, y+ calculation, turbulence modeling (k-epsilon, k-omega SST).",
+          "status": "Intermediate",
+          "actionable_project": "Set up OpenFOAM/Fluent simulation of flow over a NACA 0012 airfoil and validate lift/drag vs wind tunnel data."
+        },
+        {
+          "milestone": "Month 5: Conjugate Heat Transfer & Thermal Management (Level 2)",
+          "description": "Simulate conduction in solids coupled with convective fluid flow for cooling electronic packages.",
+          "status": "Advanced",
+          "actionable_project": "Simulate liquid cold-plate cooling for an EV battery pack with non-uniform heat generation."
+        },
+        {
+          "milestone": "Month 6-7: Multi-Phase & Transient CFD Simulations (Job-Ready)",
+          "description": "VOF multiphase modeling, aerodynamic drag reduction, and CFD verification & validation.",
+          "status": "Job-Ready",
+          "actionable_project": "Deliver an aerodynamic CFD analysis of a vehicle body showing drag coefficient reduction and vortex breakdown."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 91,
+      "automation_risk_percent": 9,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Severe Talent Shortage",
+      "growth_rate_5yr": "+21% Projected Growth",
+      "talent_shortage_index": "8.8 / 10",
+      "human_moat": [
+        "Wind tunnel and experimental physical fluid calibration (PIV data)",
+        "Complex boundary layer turbulence physics intuition (Navier-Stokes non-linearities)",
+        "Safety sign-off on spacecraft re-entry heat shields and nuclear heat exchangers"
+      ],
+      "what_ai_automates": "Mesh convergence metric computation and raw simulation output plotting.",
+      "ai_copilot_advantage": "Physics-informed neural networks (PINNs) accelerate CFD convergence by 10x, enabling real-time thermal optimization.",
+      "market_summary": "Hypersonic aerospace, EV battery cooling, and AI data-center thermal management have created explosive demand for specialized CFD analysts."
+    }
+  },
+  "Automotive & Electric Vehicle (EV) Engineer": {
+    "role": "Automotive & Electric Vehicle (EV) Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.5 - 12 LPA",
+      "mid": "\u20b914 - 24 LPA",
+      "senior": "\u20b926 - 46+ LPA",
+      "average": "\u20b915.6 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~320 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Vehicle Dynamics & Powertrain Architecture (Level 0)",
+          "description": "Tractive effort, rolling resistance, aerodynamic drag, and longitudinal vehicle dynamics modeling.",
+          "status": "Foundations",
+          "actionable_project": "Model vehicle acceleration and torque curves for an electric city car using MATLAB/Simulink."
+        },
+        {
+          "milestone": "Month 3-4: Battery Modeling & BMS Algorithms (Level 1)",
+          "description": "Lithium-ion electrochemistry, equivalent circuit RC models, Extended Kalman Filter for State of Charge (SOC).",
+          "status": "Intermediate",
+          "actionable_project": "Develop a Simulink battery management model estimating SOC within 2% error under dynamic drive cycles."
+        },
+        {
+          "milestone": "Month 5: Electric Motors & Power Electronics Inverters (Level 2)",
+          "description": "PMSM motor control, Field Oriented Control (FOC), SVPWM modulation, and regenerative braking.",
+          "status": "Advanced",
+          "actionable_project": "Design a closed-loop speed and torque controller for a 50kW EV traction motor."
+        },
+        {
+          "milestone": "Month 6-7: Thermal Management & CAN Bus Integration (Job-Ready)",
+          "description": "Battery pack cooling circuit design, ISO 26262 functional safety, and automotive CAN network logging.",
+          "status": "Job-Ready",
+          "actionable_project": "Build an end-to-end hardware-in-the-loop (HIL) prototype of an EV digital cluster parsing CAN bus telemetry."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 93,
+      "automation_risk_percent": 7,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Explosive Demand",
+      "supply_level": "Critical Talent Deficit",
+      "growth_rate_5yr": "+32% Projected Growth",
+      "talent_shortage_index": "9.4 / 10",
+      "human_moat": [
+        "High-voltage battery pack safety, cell chemistry and thermal runaway mitigation",
+        "Physical vehicle crash test compliance and ISO 26262 ASIL-D safety sign-off",
+        "Real-world dynamometer testing and Hardware-in-the-Loop (HIL) powertrain calibration"
+      ],
+      "what_ai_automates": "Standard telemetry parsing and driving cycle simulation data logging.",
+      "ai_copilot_advantage": "AI algorithms optimize battery state-of-charge (SOC) prediction and predictive regenerative braking in real time.",
+      "market_summary": "Global EV transition, battery gigafactories, and electric fleet adoption have created an unprecedented talent deficit for powertrain engineers."
+    }
+  },
+  "Bioinformatics & Computational Biologist": {
+    "role": "Bioinformatics & Computational Biologist",
+    "salary_lpa": {
+      "entry": "\u20b97.5 - 13 LPA",
+      "mid": "\u20b915 - 25 LPA",
+      "senior": "\u20b927 - 48+ LPA",
+      "average": "\u20b916.2 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~310 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Python for Genomics & Sequence Algorithms (Level 0)",
+          "description": "Biopython, DNA/RNA parsing, Needleman-Wunsch & Smith-Waterman dynamic programming alignments.",
+          "status": "Foundations",
+          "actionable_project": "Build an automated pipeline to query NCBI GenBank, translate CDS, and identify open reading frames."
+        },
+        {
+          "milestone": "Month 3-4: Next-Generation Sequencing (NGS) Data Pipelines (Level 1)",
+          "description": "FASTQ quality control, BWA alignment, SAM/BAM manipulation, and GATK variant calling.",
+          "status": "Intermediate",
+          "actionable_project": "Execute an end-to-end RNA-seq differential gene expression workflow using DESeq2 and R."
+        },
+        {
+          "milestone": "Month 5: Structural Bioinformatics & Molecular Docking (Level 2)",
+          "description": "PDB structure visualization with PyMOL, homology modeling, and AutoDock virtual screening.",
+          "status": "Advanced",
+          "actionable_project": "Screen a 500-compound small molecule library against a target viral protease to rank binding affinities."
+        },
+        {
+          "milestone": "Month 6-7: Machine Learning in Genomics & Capstone (Job-Ready)",
+          "description": "Random forests & deep learning for splice site prediction, pathogenic variant classification, and clinical reporting.",
+          "status": "Job-Ready",
+          "actionable_project": "Train an XGBoost classifier predicting pathogenic missense mutations with 92%+ AUROC."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 86,
+      "automation_risk_percent": 14,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Surging Demand",
+      "supply_level": "High Talent Shortage",
+      "growth_rate_5yr": "+27% Projected Growth",
+      "talent_shortage_index": "8.6 / 10",
+      "human_moat": [
+        "Biological wet-lab validation and clinical diagnostic interpretation",
+        "Complex multi-omics experimental design and hypothesis formulation",
+        "FDA precision medicine clinical trial compliance and genomic ethical review"
+      ],
+      "what_ai_automates": "Standard sequence alignment pipelines and raw FASTQ quality trimming.",
+      "ai_copilot_advantage": "Deep learning models (AlphaFold, ESM) accelerate protein structure prediction, allowing bioinformaticians to discover novel drugs in months rather than years.",
+      "market_summary": "Genomics sequencing breakthroughs, personalized oncology, and synthetic biology are driving aggressive recruitment across pharmaceutical and clinical research firms."
+    }
+  },
+  "Bioprocess & Fermentation Engineer": {
+    "role": "Bioprocess & Fermentation Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 21 LPA",
+      "senior": "\u20b923 - 40+ LPA",
+      "average": "\u20b914.0 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~270 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Microbial Kinetics & Stoichiometry (Level 0)",
+          "description": "Monod kinetics, yield coefficients, elemental balances, and batch/fed-batch growth modeling.",
+          "status": "Foundations",
+          "actionable_project": "Model substrate consumption and biomass accumulation curves for recombinant E. coli in Python."
+        },
+        {
+          "milestone": "Month 3: Bioreactor Design & Scale-up Principles (Level 1)",
+          "description": "Stirred-tank impeller power calculation, volumetric oxygen mass transfer coefficient (kLa), and heat removal.",
+          "status": "Intermediate",
+          "actionable_project": "Design the aeration and agitation specifications to scale a fermentation process from 5L to 5000L."
+        },
+        {
+          "milestone": "Month 4: Downstream Processing & Purification (Level 2)",
+          "description": "Cell disruption, centrifugation, microfiltration, and preparative protein chromatography (affinity & ion-exchange).",
+          "status": "Advanced",
+          "actionable_project": "Develop a multi-step purification protocol achieving >95% purity for a therapeutic monoclonal antibody."
+        },
+        {
+          "milestone": "Month 5-6: Process Analytical Technology (PAT) & cGMP (Job-Ready)",
+          "description": "Online sensor monitoring (DO, pH, off-gas analysis), quality by design (QbD), and FDA/ICH guidelines.",
+          "status": "Job-Ready",
+          "actionable_project": "Draft an industrial batch production record (BPR) and scale-up validation protocol for bio-manufacturing."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 95,
+      "automation_risk_percent": 5,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Severe Talent Shortage",
+      "growth_rate_5yr": "+22% Projected Growth",
+      "talent_shortage_index": "9.1 / 10",
+      "human_moat": [
+        "Living biological organism handling, sterile bioreactor maintenance, and contamination control",
+        "Physical chromatographic resin packing and downstream column operations",
+        "cGMP regulatory validation and physical inspection for FDA pharmaceutical manufacturing"
+      ],
+      "what_ai_automates": "Batch sensor data logging and routine off-gas temperature monitoring.",
+      "ai_copilot_advantage": "Process Analytical Technology (PAT) machine learning predicts foam formation and nutrient feed rates to boost fermentation yields by 15-25%.",
+      "market_summary": "Biosimilars, mRNA vaccines, cultivated food proteins, and sustainable bio-based chemicals are driving long-term industrial biomanufacturing demand."
+    }
+  },
+  "Biomedical Devices & Instrumentation Engineer": {
+    "role": "Biomedical Devices & Instrumentation Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b924 - 44+ LPA",
+      "average": "\u20b914.5 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
       "total_hours": "~280 Hours"
     },
     "job_readiness": {
       "level": "0 to Job-Ready in 4 Milestones",
       "stages": [
         {
-          "milestone": "Month 1-2: Programming Foundations & OOP (Level 0)",
-          "description": "Object-oriented design patterns, memory management, and asynchronous control flow in Dart or Kotlin.",
+          "milestone": "Month 1-2: Bioinstrumentation Circuits & Signal Conditioning (Level 0)",
+          "description": "Instrumentation amplifiers (AD620), active Butterworth bandpass filters, and ECG/EMG biopotential safety.",
           "status": "Foundations",
-          "actionable_project": "Build an algorithmic command-line data manager implementing standard OOP design patterns."
+          "actionable_project": "Build an analog front-end circuit on breadboard capturing real-time ECG signal with 50Hz notch filter."
         },
         {
-          "milestone": "Month 3-4: Mobile UI & State Management (Level 1)",
-          "description": "Flutter responsive widgets, declarative animations, navigation routing, and state stores (Riverpod/Bloc).",
+          "milestone": "Month 3: Biosensors & Microfluidic Diagnostics (Level 1)",
+          "description": "Electrochemical glucose sensors, optical pulse oximeters (PPG), and microfluidic lab-on-chip flow channels.",
           "status": "Intermediate",
-          "actionable_project": "Build a responsive iOS & Android mobile shopping application with smooth animations and cart state."
+          "actionable_project": "Prototype an optical SpO2 pulse oximeter sensor with microcontroller digital signal processing."
         },
         {
-          "milestone": "Month 5: Native Integrations & Cloud (Level 2)",
-          "description": "Firebase backend services, push notifications, local SQLite/Room caching, and native hardware sensors.",
+          "milestone": "Month 4: Medical Imaging & DSP Filtering (Level 2)",
+          "description": "Ultrasound beamforming basics, X-ray CT Radon transform reconstruction, and digital filtering.",
           "status": "Advanced",
-          "actionable_project": "Integrate real-time cloud chat with Firebase Authentication, offline caching, and push notifications."
+          "actionable_project": "Implement filtered backprojection in Python to reconstruct a 2D cross-section from simulated CT sinograms."
         },
         {
-          "milestone": "Month 6: App Store Deployment & Capstone (Job-Ready)",
-          "description": "Automated build signing, CI/CD with Fastlane, unit & widget testing, and production app store release.",
+          "milestone": "Month 5-6: ISO 13485 Medical Device Compliance & Embedded Firmware (Job-Ready)",
+          "description": "Medical device risk management (ISO 14971), firmware verification, and clinical trial hardware validation.",
           "status": "Job-Ready",
-          "actionable_project": "Publish a completed production mobile app to Google Play Store / TestFlight with clean architecture."
+          "actionable_project": "Build a connected vitals patient monitor sending wireless telemetry to a hospital clinician dashboard."
         }
       ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 92,
+      "automation_risk_percent": 8,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Very High Demand",
+      "supply_level": "Talent Shortage",
+      "growth_rate_5yr": "+20% Projected Growth",
+      "talent_shortage_index": "8.4 / 10",
+      "human_moat": [
+        "Physical patient safety isolation and electrical biocompatibility testing",
+        "Human clinical trials, hospital surgical workflow integration, and usability studies",
+        "ISO 13485 and FDA 510(k) medical device legal regulatory approval"
+      ],
+      "what_ai_automates": "ECG/EEG waveform baseline artifact filtering and standard component library searches.",
+      "ai_copilot_advantage": "Embedded AI enables smart pacemakers and continuous glucose monitors to detect cardiac anomalies before symptoms arise.",
+      "market_summary": "Aging global demographics and wearable health monitor proliferation have created consistent, high-paying career opportunities worldwide."
+    }
+  },
+  "VLSI & Embedded Systems Engineer": {
+    "role": "VLSI & Embedded Systems Engineer",
+    "salary_lpa": {
+      "entry": "\u20b98.0 - 15 LPA",
+      "mid": "\u20b916 - 30 LPA",
+      "senior": "\u20b932 - 60+ LPA",
+      "average": "\u20b918.0 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "12 - 15 Hours/Week",
+      "total_hours": "~340 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Digital Design & Verilog HDL (Level 0)",
+          "description": "Finite state machines (FSM), combinational/sequential logic, Verilog RTL modeling, and testbenches.",
+          "status": "Foundations",
+          "actionable_project": "Design, simulate, and verify a 32-bit ALU with carry-lookahead adder and testbench in ModelSim."
+        },
+        {
+          "milestone": "Month 3-4: Computer Architecture & Embedded Firmware (Level 1)",
+          "description": "RISC-V / ARM architecture, C register manipulation, bare-metal peripheral drivers (UART, SPI, I2C).",
+          "status": "Intermediate",
+          "actionable_project": "Write a bare-metal device driver for an OLED display and accelerometer on STM32 ARM Cortex-M."
+        },
+        {
+          "milestone": "Month 5: ASIC/FPGA Synthesis & Timing Closure (Level 2)",
+          "description": "Static Timing Analysis (STA), setup/hold slack, clock domain crossing, and FPGA bitstream implementation.",
+          "status": "Advanced",
+          "actionable_project": "Synthesize a multi-cycle RISC-V CPU core onto a Xilinx Artix-7 FPGA board running at 50MHz."
+        },
+        {
+          "milestone": "Month 6-7: RTOS, Low-Power Systems & Portfolio (Job-Ready)",
+          "description": "FreeRTOS task scheduling, semaphores, message queues, low-power sleep modes, and silicon verification.",
+          "status": "Job-Ready",
+          "actionable_project": "Deploy a multi-tasking edge device with FreeRTOS collecting sensor data and executing lightweight DSP."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 94,
+      "automation_risk_percent": 6,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Explosive Demand",
+      "supply_level": "Global Talent Deficit",
+      "growth_rate_5yr": "+29% Projected Growth",
+      "talent_shortage_index": "9.5 / 10",
+      "human_moat": [
+        "Physical silicon tape-out liability (a single mask defect costs millions of dollars)",
+        "Lab oscilloscopes, logic analyzers, and post-silicon physical bring-up debugging",
+        "Signal integrity, EM interference, thermal dissipation, and nanometer fabrication physics"
+      ],
+      "what_ai_automates": "Standard RTL boilerplate templates and standard cell placement initial seeds.",
+      "ai_copilot_advantage": "AI-assisted EDA tools optimize floorplanning and timing closure, allowing chip designers to build complex multi-billion transistor SoCs.",
+      "market_summary": "The global semiconductor chips race, national chip acts, custom AI hardware (TPUs/GPUs), and edge silicon design have created an acute shortage of chip engineers."
+    }
+  },
+  "Power Systems & Renewable Energy Engineer": {
+    "role": "Power Systems & Renewable Energy Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b924 - 44+ LPA",
+      "average": "\u20b914.8 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~280 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Power Systems Analysis & Power Electronics (Level 0)",
+          "description": "Three-phase power, symmetrical components, power flow algorithms (Newton-Raphson), and buck/boost converters.",
+          "status": "Foundations",
+          "actionable_project": "Simulate a 5-bus transmission network power flow in MATLAB and calculate transmission line losses."
+        },
+        {
+          "milestone": "Month 3: Solar PV & Wind Generator Modeling (Level 1)",
+          "description": "MPPT algorithms (Perturb & Observe), inverter grid-tie synchronization, and aerodynamic wind turbine power.",
+          "status": "Intermediate",
+          "actionable_project": "Design a 100kW grid-connected solar PV array with incremental conductance MPPT in Simulink."
+        },
+        {
+          "milestone": "Month 4: Smart Grid Protection & Microgrid Stability (Level 2)",
+          "description": "Overcurrent relays, distance protection, islanding detection, and battery energy storage system (BESS) dispatch.",
+          "status": "Advanced",
+          "actionable_project": "Simulate microgrid frequency restoration following sudden generator trip using battery fast reserve."
+        },
+        {
+          "milestone": "Month 5-6: Grid Code Compliance & Substation Automation (Job-Ready)",
+          "description": "IEC 61850 protocol, high voltage DC (HVDC) transmission lines, and utility renewable interconnection studies.",
+          "status": "Job-Ready",
+          "actionable_project": "Produce a complete utility interconnection impact assessment study for a 10MW solar park."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 93,
+      "automation_risk_percent": 7,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Talent Shortage",
+      "growth_rate_5yr": "+25% Projected Growth",
+      "talent_shortage_index": "8.9 / 10",
+      "human_moat": [
+        "High-voltage electrical substation physical commissioning and transformer energization",
+        "Utility black-start procedures, physical circuit breaker coordination, and grid protection relays",
+        "National grid security protocols and physical power infrastructure maintenance"
+      ],
+      "what_ai_automates": "Routine hourly load forecasting curves and historical tariff analytics.",
+      "ai_copilot_advantage": "Reinforcement learning optimizes solar/wind battery storage dispatch across interconnected microgrids.",
+      "market_summary": "Decarbonization mandates, solar and wind farm installations, and smart grid modernizations are driving massive multi-decade infrastructure investments."
+    }
+  },
+  "IoT & Hardware Systems Engineer": {
+    "role": "IoT & Hardware Systems Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.5 - 12 LPA",
+      "mid": "\u20b914 - 24 LPA",
+      "senior": "\u20b926 - 48+ LPA",
+      "average": "\u20b915.4 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~270 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Hardware Interfacing & Embedded C++ (Level 0)",
+          "description": "ESP32, microcontroller interrupts, analog/digital sensor reading, and Wi-Fi/Bluetooth stack setup.",
+          "status": "Foundations",
+          "actionable_project": "Build an environmental monitor logging temperature, humidity, and air quality over Wi-Fi."
+        },
+        {
+          "milestone": "Month 3: Custom PCB Design with KiCad (Level 1)",
+          "description": "Schematic capture, component footprint assignment, 2-layer PCB layout, ground routing, and Gerber generation.",
+          "status": "Intermediate",
+          "actionable_project": "Design, manufacture, and assemble a custom wearable sensor board powered by a LiPo battery."
+        },
+        {
+          "milestone": "Month 4: Cloud Telemetry & MQTT Protocols (Level 2)",
+          "description": "MQTT broker setup, TLS encryption, AWS IoT Core / GCP IoT integration, and timeseries databases.",
+          "status": "Advanced",
+          "actionable_project": "Deploy an industrial equipment telemetry gateway streaming real-time vibration metrics to AWS IoT."
+        },
+        {
+          "milestone": "Month 5-6: Edge AI & Low-Power Optimization (Job-Ready)",
+          "description": "Deep sleep modes, battery longevity profiling, TinyML on microcontrollers, and OTA firmware updates.",
+          "status": "Job-Ready",
+          "actionable_project": "Deploy an edge audio anomaly detection TinyML model on an ESP32 operating on coin cell power."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 88,
+      "automation_risk_percent": 12,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Very High Demand",
+      "supply_level": "Talent Shortage",
+      "growth_rate_5yr": "+23% Projected Growth",
+      "talent_shortage_index": "8.3 / 10",
+      "human_moat": [
+        "Hardware soldering, multi-layer PCB layout routing, and signal integrity testing",
+        "Component supply chain sourcing, thermal packaging, and environmental enclosures",
+        "FCC / CE regulatory electromagnetic compliance certifications"
+      ],
+      "what_ai_automates": "Basic microcontroller setup code and standard schematic symbol generation.",
+      "ai_copilot_advantage": "TinyML enables engineers to deploy edge AI models directly on sub-dollar microcontrollers.",
+      "market_summary": "Industrial IoT (Industry 4.0), smart agriculture, logistics asset tracking, and connected consumer tech maintain strong global demand."
+    }
+  },
+  "Structural Analysis & BIM Engineer": {
+    "role": "Structural Analysis & BIM Engineer",
+    "salary_lpa": {
+      "entry": "\u20b95.5 - 10 LPA",
+      "mid": "\u20b912 - 20 LPA",
+      "senior": "\u20b922 - 38+ LPA",
+      "average": "\u20b913.2 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~260 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Structural Mechanics & Concrete Design (Level 0)",
+          "description": "Shear force, bending moment diagrams, limit state design of reinforced concrete beams and columns (IS 456 / ACI).",
+          "status": "Foundations",
+          "actionable_project": "Calculate reinforcement detailing for a continuous two-span RC beam with dead and live loads."
+        },
+        {
+          "milestone": "Month 3: ETABS / STAAD Pro Modeling (Level 1)",
+          "description": "3D framed building modeling, wind load generation, response spectrum seismic analysis, and drift checks.",
+          "status": "Intermediate",
+          "actionable_project": "Model a G+8 commercial building in ETABS, analyze modal frequencies, and design shear walls."
+        },
+        {
+          "milestone": "Month 4: Autodesk Revit & BIM Coordination (Level 2)",
+          "description": "Parametric structural Revit modeling, rebar scheduling, and Navisworks clash detection with MEP systems.",
+          "status": "Advanced",
+          "actionable_project": "Develop a multi-discipline BIM model resolving 20+ architectural and structural service clashes."
+        },
+        {
+          "milestone": "Month 5-6: Foundation Engineering & Final Drawing Package (Job-Ready)",
+          "description": "Isolated/raft foundation design in SAFE, bar bending schedules (BBS), and structural drawing sets.",
+          "status": "Job-Ready",
+          "actionable_project": "Produce a complete structural design report and construction-ready drawing package for a commercial complex."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 96,
+      "automation_risk_percent": 4,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Steady Supply Deficit",
+      "growth_rate_5yr": "+17% Projected Growth",
+      "talent_shortage_index": "8.1 / 10",
+      "human_moat": [
+        "Licensed Professional Engineer (PE) legal stamp and life-safety criminal liability",
+        "Physical construction site inspections, foundation pour supervision, and structural concrete core tests",
+        "Earthquake retrofit assessments and physical building structural forensics"
+      ],
+      "what_ai_automates": "Rebar scheduling tables and standard structural beam deflection checks.",
+      "ai_copilot_advantage": "AI BIM clash detection identifies 100+ MEP plumbing/electrical interferences before ground is broken.",
+      "market_summary": "Global urbanization, massive infrastructure megaprojects (airports, high-speed rail, bridges), and earthquake-resistant building codes guarantee decades of job stability."
+    }
+  },
+  "Transportation & Infrastructure Engineer": {
+    "role": "Transportation & Infrastructure Engineer",
+    "salary_lpa": {
+      "entry": "\u20b95.5 - 10 LPA",
+      "mid": "\u20b911 - 19 LPA",
+      "senior": "\u20b920 - 36+ LPA",
+      "average": "\u20b912.8 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~250 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Highway Geometric Design & Sight Distances (Level 0)",
+          "description": "Horizontal and vertical alignment, super-elevation calculation, transition curves, and stopping sight distance.",
+          "status": "Foundations",
+          "actionable_project": "Design the geometric profile for a 5km 4-lane highway corridor meeting IRC / AASHTO standards."
+        },
+        {
+          "milestone": "Month 3: Traffic Engineering & Signal Synchronization (Level 1)",
+          "description": "Traffic volume studies, level of service (LOS), Webster signal timing design, and intersection roundabouts.",
+          "status": "Intermediate",
+          "actionable_project": "Perform a traffic simulation on a congested 4-way urban junction and optimize signal green splits."
+        },
+        {
+          "milestone": "Month 4: Pavement Design & Subgrade Mechanics (Level 2)",
+          "description": "California Bearing Ratio (CBR) soil testing, axle load spectra, flexible bituminous and rigid concrete pavements.",
+          "status": "Advanced",
+          "actionable_project": "Calculate pavement layer thicknesses for an expressway enduring 50 million equivalent standard axles."
+        },
+        {
+          "milestone": "Month 5-6: GIS Spatial Mapping & Urban Transit Networks (Job-Ready)",
+          "description": "QGIS network analysis, public transit route planning, and environmental impact assessments.",
+          "status": "Job-Ready",
+          "actionable_project": "Model bus rapid transit (BRT) accessibility using QGIS and deliver an urban mobility proposal."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 90,
+      "automation_risk_percent": 10,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Moderate Supply",
+      "growth_rate_5yr": "+16% Projected Growth",
+      "talent_shortage_index": "7.8 / 10",
+      "human_moat": [
+        "Municipal government public hearings, environmental impact hearings, and urban politics",
+        "On-site highway subgrade CBR soil testing and asphalt compaction quality control",
+        "Multi-modal transit safety certifications and public safety liability"
+      ],
+      "what_ai_automates": "Standard traffic count tallying and baseline signal green split calculations.",
+      "ai_copilot_advantage": "Generative traffic simulation models optimize citywide adaptive signal synchronization and reduce congestion by 20%.",
+      "market_summary": "Smart highway corridor construction, dedicated freight corridors, and urban metro rail transit networks require specialized transportation planners."
+    }
+  },
+  "Environmental & Water Resources Engineer": {
+    "role": "Environmental & Water Resources Engineer",
+    "salary_lpa": {
+      "entry": "\u20b95.5 - 10 LPA",
+      "mid": "\u20b911 - 20 LPA",
+      "senior": "\u20b921 - 38+ LPA",
+      "average": "\u20b913.0 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~260 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Environmental Chemistry & Water Quality (Level 0)",
+          "description": "BOD, COD, pH, turbidity, aquatic chemical equilibria, and standards for potable water and effluent discharge.",
+          "status": "Foundations",
+          "actionable_project": "Model oxygen sag curve (Streeter-Phelps equation) for a river receiving municipal discharge."
+        },
+        {
+          "milestone": "Month 3: Water Treatment Plant Unit Operations (Level 1)",
+          "description": "Coagulation, flocculation, rapid sand filters, disinfection, and sludge handling sizing.",
+          "status": "Intermediate",
+          "actionable_project": "Design the hydraulic dimensions of a 20 MLD municipal drinking water treatment facility."
+        },
+        {
+          "milestone": "Month 4: Biological Wastewater Engineering (Level 2)",
+          "description": "Activated sludge aeration tanks, membrane bioreactors (MBR), nutrient removal (N & P), and anaerobic digestion.",
+          "status": "Advanced",
+          "actionable_project": "Simulate biological nutrient removal in an urban sewage treatment plant using mass balances."
+        },
+        {
+          "milestone": "Month 5-6: Hydrology, Stormwater Drainage & GIS (Job-Ready)",
+          "description": "Rainfall-runoff modeling (HEC-RAS / EPA SWMM), flood risk analysis, and sustainable urban drainage systems (SUDS).",
+          "status": "Job-Ready",
+          "actionable_project": "Build an urban stormwater network model in EPA-SWMM mitigating 50-year storm flood hazards."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 95,
+      "automation_risk_percent": 5,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Surging Demand",
+      "supply_level": "High Talent Shortage",
+      "growth_rate_5yr": "+24% Projected Growth",
+      "talent_shortage_index": "8.7 / 10",
+      "human_moat": [
+        "Physical field water sampling, biological pathogen testing, and industrial effluent inspections",
+        "Municipal potable drinking water safety compliance and environmental law enforcement",
+        "Dam safety, physical watershed management, and flood disaster response command"
+      ],
+      "what_ai_automates": "Rainfall runoff graph generation and basic hydraulic pipe network headloss calculations.",
+      "ai_copilot_advantage": "Satellite AI models predict regional aquifer depletion and urban flash flood risks days in advance.",
+      "market_summary": "Climate resilience, water scarcity challenges, and industrial zero-liquid discharge (ZLD) mandates are generating intense demand for environmental engineers."
+    }
+  },
+  "Chemical Process & Plant Design Engineer": {
+    "role": "Chemical Process & Plant Design Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b924 - 45+ LPA",
+      "average": "\u20b914.9 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "10 - 14 Hours/Week",
+      "total_hours": "~300 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Material & Energy Balances (Level 0)",
+          "description": "Degrees of freedom, recycle and purge streams, phase equilibria, and heat of reaction computations.",
+          "status": "Foundations",
+          "actionable_project": "Solve steady-state material and energy balances for a continuous ammonia synthesis reactor."
+        },
+        {
+          "milestone": "Month 3: Chemical Reactor Design (Level 1)",
+          "description": "Isothermal and adiabatic CSTR/PFR sizing, reaction rate laws, catalyst kinetics, and selectivity optimization.",
+          "status": "Intermediate",
+          "actionable_project": "Size a multi-tube plug flow reactor with shell-side cooling for exothermic catalytic oxidation."
+        },
+        {
+          "milestone": "Month 4: Mass Transfer & Distillation Simulation (Level 2)",
+          "description": "McCabe-Thiele binary and multicomponent distillation column trays, reflux ratios, and condenser sizing.",
+          "status": "Advanced",
+          "actionable_project": "Design a 40-tray hydrocarbon fractionation column in Aspen Plus specifying condenser and reboiler duties."
+        },
+        {
+          "milestone": "Month 5-6: Plant P&ID, Hazop & Process Safety (Job-Ready)",
+          "description": "Piping and Instrumentation Diagrams (P&ID), relief valve sizing, Hazop methodology, and capital cost estimation.",
+          "status": "Job-Ready",
+          "actionable_project": "Develop a complete front-end engineering design (FEED) package and Hazop safety analysis for a specialty chemicals plant."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 94,
+      "automation_risk_percent": 6,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Talent Shortage",
+      "growth_rate_5yr": "+19% Projected Growth",
+      "talent_shortage_index": "8.5 / 10",
+      "human_moat": [
+        "Chemical plant Hazop safety sign-off and explosive pressure relief valve sizing",
+        "Physical distillation column turnarounds, catalyst change-outs, and plant emergency response",
+        "Environmental emissions compliance and hazardous chemical handling certifications"
+      ],
+      "what_ai_automates": "Standard stream property lookups and routine Aspen Plus convergence iterations.",
+      "ai_copilot_advantage": "AI process surrogates optimize multi-column fractionation trains to reduce plant steam energy consumption by up to 18%.",
+      "market_summary": "Specialty chemicals, hydrogen economy production, carbon capture plants, and pharmaceutical synthesis sustain strong demand for process engineers."
+    }
+  },
+  "Materials Science & Nanotechnology Engineer": {
+    "role": "Materials Science & Nanotechnology Engineer",
+    "salary_lpa": {
+      "entry": "\u20b96.0 - 11 LPA",
+      "mid": "\u20b913 - 22 LPA",
+      "senior": "\u20b924 - 44+ LPA",
+      "average": "\u20b914.6 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "5 - 6 Months",
+      "weekly_commitment": "10 - 12 Hours/Week",
+      "total_hours": "~280 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Crystallography & Microstructure Analysis (Level 0)",
+          "description": "Miller indices, X-ray diffraction (XRD) peak indexing, dislocations, and mechanical stress-strain behavior.",
+          "status": "Foundations",
+          "actionable_project": "Analyze experimental XRD patterns to identify crystal phases and lattice parameters of an alloy."
+        },
+        {
+          "milestone": "Month 3: Phase Equilibria & Heat Treatment (Level 1)",
+          "description": "Binary phase diagrams (Fe-C, Al-Cu), lever rule, TTT / CCT cooling curves, quenching, and tempering kinetics.",
+          "status": "Intermediate",
+          "actionable_project": "Formulate a precision heat-treatment regimen to achieve specified hardness and fracture toughness in steel."
+        },
+        {
+          "milestone": "Month 4: Nanomaterial Synthesis & Electron Microscopy (Level 2)",
+          "description": "Chemical vapor deposition (CVD), sol-gel synthesis, SEM, TEM, and AFM characterization of nanostructures.",
+          "status": "Advanced",
+          "actionable_project": "Characterize graphene / carbon nanotube composite samples and determine aspect ratio and surface area."
+        },
+        {
+          "milestone": "Month 5-6: Advanced Composites & Functional Materials (Job-Ready)",
+          "description": "Polymer matrix composites, dielectric and magnetic materials, battery solid electrolytes, and failure forensics.",
+          "status": "Job-Ready",
+          "actionable_project": "Design a high-strength carbon fiber composite laminate and conduct failure analysis on fractured specimens."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Low Threat",
+      "ai_security_score": 91,
+      "automation_risk_percent": 9,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "High Demand",
+      "supply_level": "Severe Talent Shortage",
+      "growth_rate_5yr": "+23% Projected Growth",
+      "talent_shortage_index": "8.8 / 10",
+      "human_moat": [
+        "Physical electron microscopy (TEM/SEM) operation, cleanroom fabrication, and synthesis",
+        "Mechanical tensile, fatigue, and fracture toughness testing of real alloy specimens",
+        "Solid-state battery electrolyte prototyping and chemical compatibility validation"
+      ],
+      "what_ai_automates": "Crystal structure XRD database pattern matching and molecular formula mass calculations.",
+      "ai_copilot_advantage": "AI materials discovery platforms screen millions of potential crystal compositions to identify candidates for superconducting or battery electrodes.",
+      "market_summary": "Next-gen solid-state batteries, aerospace carbon composites, and semiconductor quantum materials ensure long-term specialized research demand."
+    }
+  },
+  "Aerospace & Propulsion Engineer": {
+    "role": "Aerospace & Propulsion Engineer",
+    "salary_lpa": {
+      "entry": "\u20b97.0 - 13 LPA",
+      "mid": "\u20b915 - 26 LPA",
+      "senior": "\u20b928 - 50+ LPA",
+      "average": "\u20b916.5 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "12 - 15 Hours/Week",
+      "total_hours": "~330 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Aerodynamics & Orbital Mechanics (Level 0)",
+          "description": "Subsonic/supersonic aerodynamics, thin airfoil theory, Kepler's laws, and two-body orbital trajectories.",
+          "status": "Foundations",
+          "actionable_project": "Compute delta-V budgets and Hohmann transfer orbit parameters between Earth and Mars."
+        },
+        {
+          "milestone": "Month 3-4: Rocket Nozzle & Jet Engine Thermodynamics (Level 1)",
+          "description": "de Laval nozzle gas dynamics, normal/oblique shock waves, gas turbine Brayton cycles, and thrust calculation.",
+          "status": "Intermediate",
+          "actionable_project": "Design the supersonic nozzle contour for a 20kN liquid bipropellant rocket engine."
+        },
+        {
+          "milestone": "Month 5: Aircraft & Spacecraft Structural Analysis (Level 2)",
+          "description": "Thin-walled beam shear center, wing torsion, semi-monocoque fuselage, and carbon-composite layups.",
+          "status": "Advanced",
+          "actionable_project": "Perform finite element stress analysis on a swept aircraft wing box under 3G pull-up maneuver loads."
+        },
+        {
+          "milestone": "Month 6-7: Flight Dynamics & Mission Architecture (Job-Ready)",
+          "description": "Longitudinal/lateral aircraft stability, autopilot design, re-entry thermal protection, and space mission design.",
+          "status": "Job-Ready",
+          "actionable_project": "Simulate satellite attitude determination and control system (ADCS) stabilization in low Earth orbit."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 95,
+      "automation_risk_percent": 5,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Surging Demand",
+      "supply_level": "Critical Talent Deficit",
+      "growth_rate_5yr": "+26% Projected Growth",
+      "talent_shortage_index": "9.2 / 10",
+      "human_moat": [
+        "Rocket engine hot-fire test stand execution and cryogenic propellant safety",
+        "FAA / NASA astronaut crew safety certifications and zero-defect spaceflight quality assurance",
+        "Physical aircraft flight envelope testing and airframe composite damage inspections"
+      ],
+      "what_ai_automates": "Standard orbital transfer math and baseline trajectory look-up tables.",
+      "ai_copilot_advantage": "AI optimizes aerodynamic airframe contours and real-time rocket booster landing guidance algorithms.",
+      "market_summary": "The commercial space economy (SpaceX, ISRO, Blue Origin), satellite internet mega-constellations, and defense aerospace demand are driving a generational talent boom."
+    }
+  },
+  "Robotics & Autonomous Systems Engineer": {
+    "role": "Robotics & Autonomous Systems Engineer",
+    "salary_lpa": {
+      "entry": "\u20b98.0 - 15 LPA",
+      "mid": "\u20b916 - 28 LPA",
+      "senior": "\u20b930 - 55+ LPA",
+      "average": "\u20b917.5 LPA"
+    },
+    "time_to_master": {
+      "duration_months": "6 - 7 Months",
+      "weekly_commitment": "12 - 15 Hours/Week",
+      "total_hours": "~340 Hours"
+    },
+    "job_readiness": {
+      "level": "0 to Job-Ready in 4 Milestones",
+      "stages": [
+        {
+          "milestone": "Month 1-2: Spatial Transformations & Robot Kinematics (Level 0)",
+          "description": "Rotation matrices, quaternions, Denavit-Hartenberg (DH) parameters, forward & inverse manipulator kinematics.",
+          "status": "Foundations",
+          "actionable_project": "Write a 6-DOF robotic arm forward and inverse kinematics solver with joint limits in Python."
+        },
+        {
+          "milestone": "Month 3-4: Robot Dynamics & Control (Level 1)",
+          "description": "Euler-Lagrange equations, mass inertia matrix, Coriolis torque, computed torque control, and PID trajectory tracking.",
+          "status": "Intermediate",
+          "actionable_project": "Simulate computed torque trajectory tracking for a 2-link robotic arm with disturbance rejection."
+        },
+        {
+          "milestone": "Month 5: ROS 2, Gazebo Simulation & Sensors (Level 2)",
+          "description": "ROS 2 architecture, pub/sub nodes, URDF robot modeling, Gazebo physics simulation, and lidar sensor interfacing.",
+          "status": "Advanced",
+          "actionable_project": "Build an autonomous differential-drive mobile robot in Gazebo mapped using Cartographer SLAM."
+        },
+        {
+          "milestone": "Month 6-7: Autonomous Navigation & Path Planning (Job-Ready)",
+          "description": "Nav2 stack, A* / RRT path planning algorithms, obstacle avoidance costmaps, and hardware robot deployment.",
+          "status": "Job-Ready",
+          "actionable_project": "Deploy an end-to-end autonomous navigation stack guiding a robot between warehouse waypoints safely."
+        }
+      ]
+    },
+    "ai_security_and_market": {
+      "ai_threat_level": "Very Low Threat",
+      "ai_security_score": 96,
+      "automation_risk_percent": 4,
+      "threat_badge_class": "badge-secure",
+      "demand_level": "Explosive Demand",
+      "supply_level": "Critical Talent Deficit",
+      "growth_rate_5yr": "+34% Projected Growth",
+      "talent_shortage_index": "9.6 / 10",
+      "human_moat": [
+        "Hardware actuator mechanics, motor driver electronics, and physical wiring",
+        "Real-world sensor noise calibration (lidar dust reflections, camera glare, IMU drift)",
+        "Factory floor safety cell standards (ISO 10218) and human-robot collaboration safety"
+      ],
+      "what_ai_automates": "Basic forward kinematics matrix multiplications and boilerplate ROS 2 node templates.",
+      "ai_copilot_advantage": "Engineers deploy Foundation Vision-Language-Action models (Robotics Transformers) to give physical robots adaptive grasping abilities.",
+      "market_summary": "Warehouse logistics automation, surgical robotics, autonomous mobile robots (AMRs), and industrial cobots are experiencing rapid global adoption."
     }
   }
 }

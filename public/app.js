@@ -1,16 +1,141 @@
-// State Management
+// Multi-Disciplinary Engineering State Management
+let allAvailableSkills = [];
 let currentRecommendations = [];
+let currentEngineeringBranch = "Computer Science & Information Technology";
 let currentTargetRole = "Data Scientist";
 let selectedSkills = ["Python", "Machine Learning", "SQL"];
 let selectedLevel = "Beginner";
 let activeDomainFilter = "All";
 let activePricingFilter = "all"; // 'all', 'free', 'paid'
+let activeSkillTab = "All";
 let careerInsightsData = null;
+
+// Multi-Disciplinary Engineering Presets
+const BRANCH_PRESETS = {
+  "Mechanical & Automotive Engineering": {
+    defaultRole: "Mechanical Design & CAD Engineer",
+    cat: "Mechanical",
+    defaultSkills: ["CAD", "SolidWorks", "Finite Element Analysis", "ANSYS"],
+    defaultInterests: "I want to master 3D CAD modeling with SolidWorks, run stress and fatigue FEA in ANSYS, and design EV battery thermal management systems."
+  },
+  "Biotechnology & Biomedical Engineering": {
+    defaultRole: "Bioinformatics & Computational Biologist",
+    cat: "Biotech",
+    defaultSkills: ["Bioinformatics", "Genomics", "Sequence Alignment", "Python"],
+    defaultInterests: "I want to analyze DNA & RNA genomic datasets with Biopython, study CRISPR gene editing tools, and perform molecular docking for drug targets."
+  },
+  "Computer Science & Information Technology": {
+    defaultRole: "Data Scientist",
+    cat: "CS",
+    defaultSkills: ["Python", "Machine Learning", "SQL", "Pandas"],
+    defaultInterests: "I want to master Python programming, analyze datasets with Pandas, and build predictive machine learning models."
+  },
+  "Electrical & Electronics Engineering": {
+    defaultRole: "VLSI & Embedded Systems Engineer",
+    cat: "Electrical",
+    defaultSkills: ["VLSI", "Verilog", "Embedded Systems", "ARM Cortex"],
+    defaultInterests: "I want to design digital circuits in Verilog, write bare-metal firmware on ARM Cortex-M microcontrollers, and design multi-layer PCBs with KiCad."
+  },
+  "Civil & Infrastructure Engineering": {
+    defaultRole: "Structural Analysis & BIM Engineer",
+    cat: "Civil",
+    defaultSkills: ["Structural Analysis", "STAAD Pro", "ETABS", "BIM", "Autodesk Revit"],
+    defaultInterests: "I want to analyze earthquake-resistant structures in ETABS, generate parametric 3D models in Revit, and manage construction schedules."
+  },
+  "Chemical & Materials Engineering": {
+    defaultRole: "Chemical Process & Plant Design Engineer",
+    cat: "Chemical",
+    defaultSkills: ["Aspen Plus", "Chemical Process Simulation", "Chemical Reaction Engineering", "Materials Science"],
+    defaultInterests: "I want to simulate chemical flowsheet processes in Aspen Plus, design catalytic reactors, and synthesize advanced functional nanomaterials."
+  },
+  "Aerospace & Aeronautical Engineering": {
+    defaultRole: "Aerospace & Propulsion Engineer",
+    cat: "Aerospace",
+    defaultSkills: ["Aerospace Engineering", "Aerodynamics", "Rocket Propulsion", "Orbital Mechanics"],
+    defaultInterests: "I want to master supersonic aerodynamics, design rocket de Laval nozzles, and compute orbital satellite transfers."
+  },
+  "Robotics & Mechatronics Engineering": {
+    defaultRole: "Robotics & Autonomous Systems Engineer",
+    cat: "Robotics",
+    defaultSkills: ["Robotics", "ROS 2", "SLAM", "Robot Kinematics", "MATLAB"],
+    defaultInterests: "I want to master multi-axis robot kinematics, simulate mobile robots in Gazebo with ROS 2, and deploy autonomous SLAM navigation."
+  }
+};
+
+const SKILL_CATEGORY_MAP = {
+  // Mechanical
+  "CAD": "Mechanical", "SolidWorks": "Mechanical", "Autodesk Fusion 360": "Mechanical", "3D Modeling": "Mechanical",
+  "CAM": "Mechanical", "Parametric Design": "Mechanical", "Finite Element Analysis": "Mechanical", "ANSYS": "Mechanical",
+  "Stress Analysis": "Mechanical", "Structural Mechanics": "Mechanical", "Meshing": "Mechanical", "CFD": "Mechanical",
+  "Fluid Mechanics": "Mechanical", "OpenFOAM": "Mechanical", "Navier-Stokes": "Mechanical", "Aerodynamics": "Mechanical",
+  "Electric Vehicles": "Mechanical", "Battery Management Systems": "Mechanical", "Powertrain": "Mechanical",
+  "Thermodynamics": "Mechanical", "Heat Transfer": "Mechanical", "Thermal Engineering": "Mechanical", "Power Cycles": "Mechanical",
+  "Energy Systems": "Mechanical", "GD&T": "Mechanical", "Manufacturing Processes": "Mechanical", "CNC Machining": "Mechanical",
+  "Quality Control": "Mechanical", "Tolerance Analysis": "Mechanical", "Mechanical Vibrations": "Mechanical",
+  "Machine Dynamics": "Mechanical", "Modal Analysis": "Mechanical", "Damping": "Mechanical", "Rotordynamics": "Mechanical",
+
+  // Biotech
+  "Bioinformatics": "Biotech", "Computational Biology": "Biotech", "Sequence Alignment": "Biotech", "Genomics": "Biotech",
+  "Bioprocess Engineering": "Biotech", "Fermentation": "Biotech", "Bioreactors": "Biotech", "Downstream Processing": "Biotech",
+  "Cell Culture": "Biotech", "CRISPR-Cas9": "Biotech", "Genetic Engineering": "Biotech", "Molecular Biology": "Biotech",
+  "Recombinant DNA": "Biotech", "Gene Editing": "Biotech", "Biomedical Devices": "Biotech", "Biosensors": "Biotech",
+  "Signal Acquisition": "Biotech", "Medical Imaging": "Biotech", "Physiological Monitoring": "Biotech", "Drug Discovery": "Biotech",
+  "Molecular Docking": "Biotech", "Structural Biology": "Biotech", "PyMOL": "Biotech", "AutoDock": "Biotech",
+  "Pharmacology": "Biotech", "Tissue Engineering": "Biotech", "Biomaterials": "Biotech", "Regenerative Medicine": "Biotech",
+  "Scaffolds": "Biotech", "Cell Differentiation": "Biotech", "Biostatistics": "Biotech", "Survival Analysis": "Biotech", "Clinical Trials": "Biotech",
+
+  // Electrical / ECE
+  "VLSI": "Electrical", "Verilog": "Electrical", "Digital Logic": "Electrical", "FPGA": "Electrical", "ASIC Design": "Electrical",
+  "Synthesis": "Electrical", "Embedded Systems": "Electrical", "ARM Cortex": "Electrical", "C Programming": "Electrical",
+  "RTOS": "Electrical", "Microcontrollers": "Electrical", "I2C/SPI": "Electrical", "Power Electronics": "Electrical",
+  "DC-DC Converters": "Electrical", "Inverters": "Electrical", "PWM": "Electrical", "Motor Drives": "Electrical",
+  "Semiconductors": "Electrical", "Power Systems": "Electrical", "Renewable Energy": "Electrical", "Smart Grid": "Electrical",
+  "Solar PV": "Electrical", "Wind Power": "Electrical", "Grid Stability": "Electrical", "PCB Design": "Electrical",
+  "KiCad": "Electrical", "Schematic Capture": "Electrical", "Circuit Layout": "Electrical", "Signal Integrity": "Electrical",
+  "Soldering": "Electrical", "Digital Signal Processing": "Electrical", "DSP": "Electrical", "FFT": "Electrical",
+  "Filtering": "Electrical", "Signal Modulation": "Electrical", "IoT": "Electrical", "ESP32": "Electrical",
+  "MQTT": "Electrical", "Sensor Networks": "Electrical", "Microcontroller Interfacing": "Electrical", "Edge Computing": "Electrical",
+
+  // Civil
+  "Structural Analysis": "Civil", "STAAD Pro": "Civil", "ETABS": "Civil", "Reinforced Concrete": "Civil",
+  "Earthquake Engineering": "Civil", "BIM": "Civil", "Autodesk Revit": "Civil", "3D Architecture": "Civil",
+  "Clash Detection": "Civil", "Construction Documentation": "Civil", "Soil Mechanics": "Civil", "Geotechnical Engineering": "Civil",
+  "Foundation Design": "Civil", "Slope Stability": "Civil", "Retaining Walls": "Civil", "Transportation Engineering": "Civil",
+  "Highway Design": "Civil", "Traffic Flow": "Civil", "Pavement Design": "Civil", "GIS": "Civil", "Environmental Engineering": "Civil",
+  "Wastewater Treatment": "Civil", "Water Quality": "Civil", "Filtration": "Civil", "Hydrology": "Civil",
+  "Construction Management": "Civil", "Primavera P6": "Civil", "Cost Estimation": "Civil", "Project Scheduling": "Civil", "Risk Management": "Civil",
+
+  // Chemical & Materials
+  "Aspen Plus": "Chemical", "Chemical Process Simulation": "Chemical", "Process Optimization": "Chemical", "Mass & Energy Balance": "Chemical",
+  "Chemical Reaction Engineering": "Chemical", "Reactor Design": "Chemical", "Catalysis": "Chemical", "Kinetics": "Chemical",
+  "Materials Science": "Chemical", "Metallurgy": "Chemical", "Phase Diagrams": "Chemical", "Crystallography": "Chemical",
+  "Mechanical Properties": "Chemical", "Nanotechnology": "Chemical", "Nanomaterials": "Chemical", "SEM/TEM": "Chemical",
+  "Carbon Nanotubes": "Chemical", "Surface Chemistry": "Chemical", "Mass Transfer": "Chemical", "Distillation": "Chemical",
+  "Separation Processes": "Chemical", "Absorption": "Chemical",
+
+  // Aerospace
+  "Aerospace Engineering": "Aerospace", "Orbital Mechanics": "Aerospace", "Flight Dynamics": "Aerospace", "Avionics": "Aerospace",
+  "Rocket Propulsion": "Aerospace", "Propulsion": "Aerospace", "Nozzle Design": "Aerospace", "Thrust": "Aerospace",
+  "Spacecraft Dynamics": "Aerospace", "Aircraft Structures": "Aerospace", "Composites": "Aerospace", "Aeroelasticity": "Aerospace", "Fatigue Analysis": "Aerospace",
+
+  // Robotics
+  "Robotics": "Robotics", "Robot Kinematics": "Robotics", "Trajectory Planning": "Robotics", "Robot Dynamics": "Robotics",
+  "Motion Control": "Robotics", "ROS 2": "Robotics", "SLAM": "Robotics", "Autonomous Navigation": "Robotics", "Lidar": "Robotics",
+  "Gazebo": "Robotics", "Mechatronics": "Robotics", "Feedback Control": "Robotics", "PID Controllers": "Robotics", "Actuators": "Robotics", "Sensors": "Robotics", "Simulink": "Robotics"
+};
+
+function getSkillCategory(skill) {
+  return SKILL_CATEGORY_MAP[skill] || "CS";
+}
 
 // DOM Elements
 const loginView = document.getElementById("login-view");
 const dashboardView = document.getElementById("dashboard-view");
 const onboardingForm = document.getElementById("onboarding-form");
+const engineeringBranchSelect = document.getElementById("engineering-branch");
+const targetRoleSelect = document.getElementById("target-role");
+const interestsTextArea = document.getElementById("interests-text");
+const skillsFilterTabs = document.getElementById("skills-filter-tabs");
 const skillsCloud = document.getElementById("skills-cloud");
 const coursesContainer = document.getElementById("courses-container");
 const liveSearchInput = document.getElementById("live-search-input");
@@ -34,6 +159,25 @@ const btnToggleReadiness = document.getElementById("btn-toggle-readiness");
 const readinessDrawer = document.getElementById("readiness-drawer");
 const readinessRoleText = document.getElementById("readiness-role-text");
 const readinessMilestonesContainer = document.getElementById("readiness-milestones-container");
+
+// AI Threat & Future Demand Elements
+const metricDemandGrowth = document.getElementById("metric-demand-growth");
+const metricMarketSupply = document.getElementById("metric-market-supply");
+const metricAiCard = document.getElementById("metric-ai-card");
+const metricAiThreatVal = document.getElementById("metric-ai-threat-val");
+const metricAiThreatSub = document.getElementById("metric-ai-threat-sub");
+const btnToggleAiThreat = document.getElementById("btn-toggle-ai-threat");
+const aiThreatDrawer = document.getElementById("ai-threat-drawer");
+const aiDrawerRoleText = document.getElementById("ai-drawer-role-text");
+const aiScoreCircle = document.getElementById("ai-score-circle");
+const humanMoatContainer = document.getElementById("human-moat-container");
+const intelGrowthRate = document.getElementById("intel-growth-rate");
+const intelDemandStatus = document.getElementById("intel-demand-status");
+const intelSupplyStatus = document.getElementById("intel-supply-status");
+const intelShortageIndex = document.getElementById("intel-shortage-index");
+const intelMarketSummary = document.getElementById("intel-market-summary");
+const intelAiAutomates = document.getElementById("intel-ai-automates");
+const intelAiCopilot = document.getElementById("intel-ai-copilot");
 
 // Dashboard Tabs & Panels
 const tabRecsBtn = document.getElementById("tab-recs-btn");
@@ -72,16 +216,24 @@ async function fetchSkills() {
   try {
     const res = await fetch("/api/skills");
     const data = await res.json();
-    renderSkillsCloud(data.skills);
+    allAvailableSkills = data.skills || [];
+    renderSkillsCloud();
   } catch (err) {
     console.error("Failed to fetch skills:", err);
   }
 }
 
-// 2. Render clickable skills cloud
-function renderSkillsCloud(skills) {
+// 2. Render clickable skills cloud with discipline filtering
+function renderSkillsCloud() {
+  if (!skillsCloud) return;
   skillsCloud.innerHTML = "";
-  skills.forEach(skill => {
+
+  const filteredSkills = allAvailableSkills.filter(skill => {
+    if (activeSkillTab === "All") return true;
+    return getSkillCategory(skill) === activeSkillTab;
+  });
+
+  filteredSkills.forEach(skill => {
     const tag = document.createElement("div");
     tag.className = "skill-tag" + (selectedSkills.includes(skill) ? " selected" : "");
     tag.textContent = skill;
@@ -100,6 +252,55 @@ function renderSkillsCloud(skills) {
 
 // 3. Setup Event Listeners
 function setupEventListeners() {
+  // Engineering Discipline / Branch Selector Changed
+  if (engineeringBranchSelect) {
+    engineeringBranchSelect.addEventListener("change", () => {
+      const branch = engineeringBranchSelect.value;
+      currentEngineeringBranch = branch;
+      const preset = BRANCH_PRESETS[branch];
+      if (preset) {
+        if (targetRoleSelect) targetRoleSelect.value = preset.defaultRole;
+        currentTargetRole = preset.defaultRole;
+        if (interestsTextArea) interestsTextArea.value = preset.defaultInterests;
+        selectedSkills = [...preset.defaultSkills];
+
+        // Switch active skill tab
+        activeSkillTab = preset.cat;
+        if (skillsFilterTabs) {
+          const pills = skillsFilterTabs.querySelectorAll(".skill-filter-pill");
+          pills.forEach(p => {
+            if (p.dataset.cat === preset.cat) {
+              p.classList.add("active");
+            } else {
+              p.classList.remove("active");
+            }
+          });
+        }
+        renderSkillsCloud();
+      }
+    });
+  }
+
+  // Target Role Changed
+  if (targetRoleSelect) {
+    targetRoleSelect.addEventListener("change", () => {
+      currentTargetRole = targetRoleSelect.value;
+    });
+  }
+
+  // Skills Category Filter Tabs
+  if (skillsFilterTabs) {
+    const filterPills = skillsFilterTabs.querySelectorAll(".skill-filter-pill");
+    filterPills.forEach(pill => {
+      pill.addEventListener("click", () => {
+        filterPills.forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+        activeSkillTab = pill.dataset.cat;
+        renderSkillsCloud();
+      });
+    });
+  }
+
   // Experience level pills
   const levelButtons = document.querySelectorAll("#experience-levels .pill-btn");
   levelButtons.forEach(btn => {
@@ -115,14 +316,16 @@ function setupEventListeners() {
     e.preventDefault();
     const name = document.getElementById("student-name").value.trim() || "Student";
     const email = document.getElementById("student-email").value.trim();
-    const targetRole = document.getElementById("target-role").value;
-    const interestsText = document.getElementById("interests-text").value.trim();
+    const branch = engineeringBranchSelect ? engineeringBranchSelect.value : currentEngineeringBranch;
+    const targetRole = targetRoleSelect ? targetRoleSelect.value : currentTargetRole;
+    const interestsText = interestsTextArea ? interestsTextArea.value.trim() : "";
 
+    currentEngineeringBranch = branch;
     currentTargetRole = targetRole;
 
     // Show loading indicator
     const submitBtn = document.getElementById("btn-submit-login");
-    submitBtn.innerHTML = `<span>Calculating Recommendations & Market Data...</span>`;
+    submitBtn.innerHTML = `<span>Calculating Multi-Disciplinary Recommendations & Market Data...</span>`;
     submitBtn.disabled = true;
 
     try {
@@ -132,6 +335,7 @@ function setupEventListeners() {
         body: JSON.stringify({
           name: name,
           email: email,
+          engineering_branch: branch,
           target_role: targetRole,
           experience_level: selectedLevel,
           selected_skills: selectedSkills,
@@ -145,10 +349,12 @@ function setupEventListeners() {
         
         // Update user presentation
         displayUserName.textContent = name;
-        displayTargetRole.textContent = targetRole;
+        const branchShort = branch.split(" ")[0];
+        displayTargetRole.textContent = `${targetRole} • ${branchShort}`;
 
         const profileDisplayName = document.getElementById("profile-display-name");
         const profileDisplayEmail = document.getElementById("profile-display-email");
+        const profileDisplayBranch = document.getElementById("profile-display-branch");
         const profileDisplayRole = document.getElementById("profile-display-role");
         const profileDisplayLevel = document.getElementById("profile-display-level");
         const profileAvatarLarge = document.getElementById("profile-avatar-large");
@@ -156,6 +362,7 @@ function setupEventListeners() {
 
         if (profileDisplayName) profileDisplayName.textContent = name;
         if (profileDisplayEmail) profileDisplayEmail.textContent = email;
+        if (profileDisplayBranch) profileDisplayBranch.textContent = branch;
         if (profileDisplayRole) profileDisplayRole.textContent = targetRole;
         if (profileDisplayLevel) profileDisplayLevel.textContent = selectedLevel;
 
@@ -210,8 +417,17 @@ function setupEventListeners() {
   btnToggleReadiness.addEventListener("click", () => {
     const isHidden = readinessDrawer.style.display === "none";
     readinessDrawer.style.display = isHidden ? "block" : "none";
-    btnToggleReadiness.querySelector("span").textContent = isHidden ? "Hide Milestones" : "View Milestones";
+    btnToggleReadiness.querySelector("span").textContent = isHidden ? "Hide Milestones" : "Milestones";
   });
+
+  // Toggle AI Threat & Future Demand Drawer
+  if (btnToggleAiThreat) {
+    btnToggleAiThreat.addEventListener("click", () => {
+      const isHidden = aiThreatDrawer.style.display === "none";
+      aiThreatDrawer.style.display = isHidden ? "block" : "none";
+      btnToggleAiThreat.querySelector("span").textContent = isHidden ? "Hide AI Intel" : "AI Threat Intel";
+    });
+  }
 
   // Back to Login / Change Goals
   btnEditProfile.addEventListener("click", () => {
@@ -288,6 +504,33 @@ async function fetchCareerInsights(role) {
       if (readinessRoleText) readinessRoleText.textContent = role;
       renderMilestones(careerInsightsData.job_readiness.stages || []);
     }
+
+    // Populate AI Threat & Future Demand Intelligence
+    if (careerInsightsData && careerInsightsData.ai_security_and_market) {
+      const aiData = careerInsightsData.ai_security_and_market;
+      if (metricDemandGrowth) metricDemandGrowth.textContent = aiData.growth_rate_5yr;
+      if (metricMarketSupply) metricMarketSupply.textContent = `${aiData.demand_level} • ${aiData.supply_level}`;
+      if (metricAiThreatVal) metricAiThreatVal.textContent = `${aiData.ai_security_score}% AI-Secure`;
+      if (metricAiThreatSub) metricAiThreatSub.textContent = `${aiData.ai_threat_level} • ${aiData.automation_risk_percent}% Risk`;
+
+      const isModerate = aiData.threat_badge_class === "badge-moderate";
+      if (metricAiCard) metricAiCard.classList.toggle("moderate", isModerate);
+      if (aiScoreCircle) {
+        aiScoreCircle.textContent = `${aiData.ai_security_score}%`;
+        aiScoreCircle.classList.toggle("moderate", isModerate);
+      }
+      if (aiDrawerRoleText) aiDrawerRoleText.textContent = role;
+      if (humanMoatContainer && aiData.human_moat) {
+        humanMoatContainer.innerHTML = aiData.human_moat.map(m => `<li>${escapeHTML(m)}</li>`).join("");
+      }
+      if (intelGrowthRate) intelGrowthRate.textContent = aiData.growth_rate_5yr;
+      if (intelDemandStatus) intelDemandStatus.textContent = aiData.demand_level;
+      if (intelSupplyStatus) intelSupplyStatus.textContent = aiData.supply_level;
+      if (intelShortageIndex) intelShortageIndex.textContent = aiData.talent_shortage_index;
+      if (intelMarketSummary) intelMarketSummary.textContent = aiData.market_summary;
+      if (intelAiAutomates) intelAiAutomates.textContent = aiData.what_ai_automates;
+      if (intelAiCopilot) intelAiCopilot.textContent = aiData.ai_copilot_advantage;
+    }
   } catch (err) {
     console.error("Failed to load career insights:", err);
   }
@@ -314,6 +557,23 @@ function renderMilestones(stages) {
 function renderComparisonMatrix() {
   const freeCourses = currentRecommendations.filter(c => c.is_free || c.has_free_audit);
   const paidCourses = currentRecommendations.filter(c => !c.is_free || (c.pricing_type && c.pricing_type.toLowerCase().includes("paid")));
+
+  // Update dynamic summary stats if elements exist
+  const freeStatVal = document.querySelector(".c-stat-box:nth-child(1) .c-stat-val");
+  const freeStatSub = document.querySelector(".c-stat-box:nth-child(1) .c-stat-sub");
+  const paidStatVal = document.querySelector(".c-stat-box:nth-child(2) .c-stat-val");
+  const paidStatSub = document.querySelector(".c-stat-box:nth-child(2) .c-stat-sub");
+
+  if (freeCourses.length > 0 && freeStatVal) {
+    const avgFree = (freeCourses.reduce((acc, c) => acc + (c.rating || 0), 0) / freeCourses.length).toFixed(2);
+    freeStatVal.textContent = `★ ${avgFree} Avg Rating`;
+    freeStatSub.textContent = `${freeCourses.length} Courses Available`;
+  }
+  if (paidCourses.length > 0 && paidStatVal) {
+    const avgPaid = (paidCourses.reduce((acc, c) => acc + (c.rating || 0), 0) / paidCourses.length).toFixed(2);
+    paidStatVal.textContent = `★ ${avgPaid} Avg Rating`;
+    paidStatSub.textContent = `${paidCourses.length} Courses Available`;
+  }
 
   freeCoursesCompareList.innerHTML = freeCourses.slice(0, 4).map(c => `
     <div class="compare-course-item">
@@ -410,7 +670,18 @@ function filterAndRenderCourses() {
 
   const filtered = currentRecommendations.filter(course => {
     // Domain match
-    const matchesDomain = (activeDomainFilter === "All") || (course.domain === activeDomainFilter);
+    let matchesDomain = (activeDomainFilter === "All");
+    if (!matchesDomain) {
+      if (activeDomainFilter === "Computer Science & Information Technology") {
+        matchesDomain = course.category === "Computer Science & IT" || [
+          "AI & Machine Learning", "Data Science & Analytics", "Computer Science & Programming", 
+          "Web & Full Stack Engineering", "Cloud & DevOps", "Cybersecurity", "Mobile App Development"
+        ].includes(course.domain);
+      } else {
+        const activePrefix = activeDomainFilter.toLowerCase().split(" ")[0];
+        matchesDomain = course.domain === activeDomainFilter || course.domain.toLowerCase().includes(activePrefix);
+      }
+    }
     
     // Pricing match
     let matchesPricing = true;

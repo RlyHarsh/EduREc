@@ -1,213 +1,1598 @@
 {
   "Data Scientist": {
     "title": "Data Scientist Career Roadmap",
-    "description": "Step-by-step roadmap to become a professional Data Scientist in 2026.",
+    "description": "Step-by-step roadmap to become a professional Data Scientist.",
     "stages": [
       {
         "step": 1,
         "phase": "Foundations",
         "title": "Programming & Mathematics",
         "description": "Master core computational and quantitative thinking essential for data modeling.",
-        "topics": ["Python Syntax", "Data Structures", "Linear Algebra", "Calculus", "Probability & Statistics"],
-        "recommended_course_ids": ["CRS-03", "CRS-11"]
+        "topics": [
+          "Python Syntax",
+          "Data Structures",
+          "Linear Algebra",
+          "Calculus",
+          "Probability & Statistics"
+        ],
+        "recommended_course_ids": [
+          "CRS-03",
+          "CRS-11"
+        ]
       },
       {
         "step": 2,
         "phase": "Data Manipulation",
         "title": "Data Wrangling & SQL Analysis",
         "description": "Learn to extract, clean, query, and transform unstructured and relational datasets.",
-        "topics": ["Pandas", "NumPy", "SQL Queries", "Relational DBs", "Data Cleaning", "Matplotlib / Seaborn"],
-        "recommended_course_ids": ["CRS-04"]
+        "topics": [
+          "Pandas",
+          "NumPy",
+          "SQL Queries",
+          "Relational DBs",
+          "Data Cleaning",
+          "Matplotlib / Seaborn"
+        ],
+        "recommended_course_ids": [
+          "CRS-04",
+          "CRS-20"
+        ]
       },
       {
         "step": 3,
         "phase": "Core Machine Learning",
         "title": "Supervised & Unsupervised Modeling",
         "description": "Train predictive algorithms, evaluate generalization, and prevent overfitting.",
-        "topics": ["Regression", "Classification", "Decision Trees", "Ensembles", "Scikit-Learn", "Cross-Validation"],
-        "recommended_course_ids": ["CRS-01", "CRS-17"]
+        "topics": [
+          "Regression",
+          "Classification",
+          "Decision Trees",
+          "Ensembles",
+          "Scikit-Learn",
+          "Cross-Validation"
+        ],
+        "recommended_course_ids": [
+          "CRS-01",
+          "CRS-17"
+        ]
       },
       {
         "step": 4,
         "phase": "Advanced Specialization",
         "title": "Deep Learning & Production Systems",
         "description": "Work with neural networks, modern NLP transformers, and real-world deployment.",
-        "topics": ["Neural Networks", "PyTorch / TensorFlow", "Transformers & LLMs", "Feature Stores", "MLOps"],
-        "recommended_course_ids": ["CRS-02", "CRS-05"]
+        "topics": [
+          "Neural Networks",
+          "PyTorch / TensorFlow",
+          "Transformers & LLMs",
+          "Feature Stores",
+          "MLOps"
+        ],
+        "recommended_course_ids": [
+          "CRS-02",
+          "CRS-05"
+        ]
       }
     ]
   },
   "Machine Learning Engineer": {
-    "title": "Machine Learning Engineer Roadmap",
-    "description": "Architect, scale, and operationalize machine learning models in production.",
+    "title": "Machine Learning Engineer Career Roadmap",
+    "description": "Engineering-first roadmap to build, deploy, and scale deep learning and ML systems in production.",
     "stages": [
       {
         "step": 1,
         "phase": "Foundations",
-        "title": "Computer Science & Applied Math",
-        "description": "Strong foundational programming, memory management, and linear algebra.",
-        "topics": ["Python", "Algorithms & Complexity", "Linear Algebra", "Matrix Calculus", "Vector Optimization"],
-        "recommended_course_ids": ["CRS-03", "CRS-11"]
+        "title": "Software Engineering & Math for ML",
+        "description": "Establish solid coding practices, algorithm analysis, and vector calculus.",
+        "topics": [
+          "Python",
+          "Data Structures",
+          "Algorithms",
+          "Linear Algebra",
+          "Vector Calculus"
+        ],
+        "recommended_course_ids": [
+          "CRS-03",
+          "CRS-19",
+          "CRS-11"
+        ]
       },
       {
         "step": 2,
-        "phase": "Core ML",
-        "title": "Machine Learning Algorithms & Optimization",
-        "description": "Implement classical machine learning models and cost function optimization.",
-        "topics": ["Gradient Descent", "Supervised Learning", "Regularization", "Scikit-Learn", "Model Metrics"],
-        "recommended_course_ids": ["CRS-01", "CRS-17"]
+        "phase": "Core ML & Deep Learning",
+        "title": "Model Architecture & Optimization",
+        "description": "Master gradient descent, backpropagation, CNNs, Transformers, and loss functions.",
+        "topics": [
+          "Supervised Learning",
+          "Deep Neural Networks",
+          "PyTorch",
+          "Hyperparameter Tuning",
+          "Embeddings"
+        ],
+        "recommended_course_ids": [
+          "CRS-01",
+          "CRS-02"
+        ]
       },
       {
         "step": 3,
-        "phase": "Deep Learning",
-        "title": "Deep Neural Networks & Architectures",
-        "description": "Design Convolutional and Recurrent Networks, Transformers, and LLMs.",
-        "topics": ["CNNs", "RNNs", "PyTorch", "Attention Mechanisms", "Hugging Face", "Model Fine-tuning"],
-        "recommended_course_ids": ["CRS-02", "CRS-05"]
+        "phase": "Specialized AI Domains",
+        "title": "NLP, Computer Vision & Large Models",
+        "description": "Implement attention mechanisms, HuggingFace pipelines, and fine-tune generative models.",
+        "topics": [
+          "Attention Mechanisms",
+          "HuggingFace",
+          "LoRA Fine-Tuning",
+          "Vector Databases",
+          "Prompt Engineering"
+        ],
+        "recommended_course_ids": [
+          "CRS-05"
+        ]
       },
       {
         "step": 4,
-        "phase": "Engineering & MLOps",
-        "title": "Containerization & Cloud Serving",
-        "description": "Containerize models, setup automated CI/CD pipelines, and monitor model drift.",
-        "topics": ["Docker", "Kubernetes", "FastAPI Serving", "GCP Vertex AI", "Experiment Tracking", "CI/CD"],
-        "recommended_course_ids": ["CRS-09", "CRS-08"]
+        "phase": "Production MLOps",
+        "title": "Model Deployment & Infrastructure",
+        "description": "Package models with Docker, configure CI/CD pipelines, and monitor data drift.",
+        "topics": [
+          "MLOps",
+          "Docker",
+          "Kubernetes",
+          "Model Serving",
+          "Monitoring & Drift",
+          "Triton"
+        ],
+        "recommended_course_ids": [
+          "CRS-18",
+          "CRS-13"
+        ]
       }
     ]
   },
   "Full Stack Web Developer": {
-    "title": "Full Stack Web Developer Roadmap",
-    "description": "Master end-to-end web engineering across frontend, backend, databases, and deployment.",
+    "title": "Full Stack Web Developer Career Roadmap",
+    "description": "Complete path from web design fundamentals to full stack architectures and cloud deployment.",
     "stages": [
       {
         "step": 1,
-        "phase": "Frontend Basics",
-        "title": "HTML, CSS & Modern JavaScript",
-        "description": "Build responsive, accessible user interfaces with semantic markup and async JS.",
-        "topics": ["HTML5", "CSS3 / Flexbox / Grid", "ES6+ JavaScript", "DOM API", "Responsive Web Design"],
-        "recommended_course_ids": ["CRS-06"]
+        "phase": "Foundations",
+        "title": "Client-Side Engineering",
+        "description": "Build responsive, accessible user interfaces with modern web standards.",
+        "topics": [
+          "HTML5",
+          "CSS3 / Flexbox / Grid",
+          "JavaScript (ES6+)",
+          "DOM Manipulation",
+          "Responsive Design"
+        ],
+        "recommended_course_ids": [
+          "CRS-06",
+          "CRS-07"
+        ]
       },
       {
         "step": 2,
-        "phase": "Client Frameworks",
-        "title": "React Ecosystem & State Architecture",
-        "description": "Component-driven development, custom hooks, client-side routing, and state stores.",
-        "topics": ["React 18", "Hooks & Context", "Redux Toolkit", "Component Lifecycle", "REST Integration"],
-        "recommended_course_ids": ["CRS-20"]
+        "phase": "Frontend Frameworks",
+        "title": "Component Architecture & State",
+        "description": "Develop single-page applications with reactive data flow and routing.",
+        "topics": [
+          "React.js",
+          "Hooks & State",
+          "Component Libraries",
+          "REST API Consumption",
+          "Client-Side Routing"
+        ],
+        "recommended_course_ids": [
+          "CRS-06",
+          "CRS-14"
+        ]
       },
       {
         "step": 3,
-        "phase": "Backend Engineering",
-        "title": "Server Logic, APIs & Databases",
-        "description": "Design performant backend REST APIs, authentication layers, and database schemas.",
-        "topics": ["Node.js / Express", "Python Django", "SQL & Relational DBs", "MongoDB", "JWT Auth"],
-        "recommended_course_ids": ["CRS-07", "CRS-12"]
+        "phase": "Backend & Databases",
+        "title": "API Design & Data Persistence",
+        "description": "Design server-side business logic, handle authentication, and structure databases.",
+        "topics": [
+          "Node.js",
+          "Express",
+          "RESTful APIs",
+          "PostgreSQL / MongoDB",
+          "JWT Authentication"
+        ],
+        "recommended_course_ids": [
+          "CRS-14",
+          "CRS-20"
+        ]
       },
       {
         "step": 4,
-        "phase": "DevOps & Deployment",
-        "title": "Cloud Hosting & Containers",
-        "description": "Containerize full-stack services with Docker and manage automated deployments.",
-        "topics": ["Docker", "Container Orchestration", "CI/CD", "Nginx", "Cloud Hosting"],
-        "recommended_course_ids": ["CRS-09"]
+        "phase": "DevOps & Cloud Production",
+        "title": "Deployment, Containerization & CI/CD",
+        "description": "Deploy scalable applications with automated pipelines and cloud infrastructure.",
+        "topics": [
+          "Docker",
+          "CI/CD Pipelines",
+          "Cloud Deployment (AWS/GCP)",
+          "Security Best Practices",
+          "Testing"
+        ],
+        "recommended_course_ids": [
+          "CRS-13",
+          "CRS-09"
+        ]
       }
     ]
   },
   "Cloud Solutions Architect": {
-    "title": "Cloud & DevOps Solutions Architect Roadmap",
-    "description": "Design fault-tolerant, scalable, and secure cloud infrastructures across AWS and GCP.",
+    "title": "Cloud Solutions Architect Career Roadmap",
+    "description": "Learn to design highly available, secure, and cost-efficient cloud infrastructures.",
     "stages": [
       {
         "step": 1,
         "phase": "Foundations",
-        "title": "Networking & Systems Fundamentals",
-        "description": "Core computer architecture, network topology, TCP/IP, and Linux administration.",
-        "topics": ["Linux OS", "TCP/IP & DNS", "SSH & Bash", "Virtualization", "Security Groups"],
-        "recommended_course_ids": ["CRS-03"]
+        "title": "Systems, Networking & Virtualization",
+        "description": "Master OS fundamentals, networking protocols, and virtual machines.",
+        "topics": [
+          "Linux Administration",
+          "TCP/IP & DNS",
+          "Subnets & Routing",
+          "Virtualization",
+          "Bash Scripting"
+        ],
+        "recommended_course_ids": [
+          "CRS-03"
+        ]
       },
       {
         "step": 2,
-        "phase": "Public Cloud Core",
-        "title": "AWS & GCP Infrastructure Design",
-        "description": "Architect compute instances, high-availability VPC networks, and managed storage.",
-        "topics": ["AWS EC2 & S3", "IAM Permissions", "VPC Peering", "Serverless Functions", "Load Balancing"],
-        "recommended_course_ids": ["CRS-13", "CRS-08"]
+        "phase": "Core Cloud Platforms",
+        "title": "Multi-Tier Cloud Architecture",
+        "description": "Architect scalable compute, storage, and networking on major cloud providers.",
+        "topics": [
+          "VPC & Subnetting",
+          "EC2 / Compute Engine",
+          "S3 / Cloud Storage",
+          "Load Balancing",
+          "IAM Policies"
+        ],
+        "recommended_course_ids": [
+          "CRS-08",
+          "CRS-09"
+        ]
       },
       {
         "step": 3,
-        "phase": "Container Orchestration",
-        "title": "Docker Containers & Kubernetes",
-        "description": "Standardize runtime environments with Docker and orchestrate microservices at scale.",
-        "topics": ["Docker Compose", "Kubernetes Pods & Services", "Ingress Controllers", "Helm Charts", "Service Mesh"],
-        "recommended_course_ids": ["CRS-09"]
+        "phase": "Containerization & Automation",
+        "title": "Kubernetes & Infrastructure as Code",
+        "description": "Automate infrastructure provisioning and orchestrate microservices.",
+        "topics": [
+          "Docker Containers",
+          "Kubernetes (K8s)",
+          "Terraform",
+          "GitOps",
+          "Microservices Architecture"
+        ],
+        "recommended_course_ids": [
+          "CRS-13"
+        ]
       },
       {
         "step": 4,
-        "phase": "Infrastructure as Code",
-        "title": "Data Pipelines & Automated Operations",
-        "description": "Automate cloud deployment with Terraform and manage enterprise big data warehouses.",
-        "topics": ["Terraform", "GitOps", "BigQuery / Data Engineering", "SRE Best Practices", "Monitoring"],
-        "recommended_course_ids": ["CRS-18"]
+        "phase": "Enterprise Governance",
+        "title": "Security, Resiliency & Cost Optimization",
+        "description": "Implement disaster recovery, zero-trust security, and FinOps budgeting.",
+        "topics": [
+          "Disaster Recovery",
+          "High Availability",
+          "Cloud Security",
+          "FinOps",
+          "Migration Strategies"
+        ],
+        "recommended_course_ids": [
+          "CRS-10",
+          "CRS-08"
+        ]
       }
     ]
   },
   "Cybersecurity Analyst": {
-    "title": "Cybersecurity Analyst Roadmap",
-    "description": "Protect network infrastructure, defend data assets, and conduct penetration tests.",
+    "title": "Cybersecurity Analyst Career Roadmap",
+    "description": "Master security operations, vulnerability assessment, threat intelligence, and digital defense.",
     "stages": [
       {
         "step": 1,
         "phase": "Foundations",
-        "title": "Networking & Security Architecture",
-        "description": "Understand network protocols, packet inspection, firewalls, and cryptographic basics.",
-        "topics": ["Network Protocols", "Wireshark", "Cryptography & Ciphers", "Linux Security", "TCP Handshakes"],
-        "recommended_course_ids": ["CRS-10"]
+        "title": "Networking & Security Core Principles",
+        "description": "Understand protocols, encryption, CIA triad, and attack surfaces.",
+        "topics": [
+          "Network Protocols",
+          "Packet Analysis (Wireshark)",
+          "Cryptography",
+          "Access Controls",
+          "Linux CLI"
+        ],
+        "recommended_course_ids": [
+          "CRS-10",
+          "CRS-15"
+        ]
       },
       {
         "step": 2,
-        "phase": "Defensive Security",
-        "title": "Security Operations & Incident Response",
-        "description": "Monitor logs, detect intrusions with SIEM platforms, and formulate triage responses.",
-        "topics": ["SIEM Tools", "Log Analysis", "Threat Intelligence", "Incident Handling", "Vulnerability Scanning"],
-        "recommended_course_ids": ["CRS-10"]
+        "phase": "Security Operations (SOC)",
+        "title": "Log Analysis & Incident Detection",
+        "description": "Detect intrusions, analyze SIEM telemetry, and triage security alerts.",
+        "topics": [
+          "SIEM Tools",
+          "Log Correlation",
+          "Threat Feeds",
+          "Malware Indicators",
+          "Incident Response Playbooks"
+        ],
+        "recommended_course_ids": [
+          "CRS-10"
+        ]
       },
       {
         "step": 3,
-        "phase": "Offensive Security",
-        "title": "Web Application Penetration Testing",
-        "description": "Identify and exploit OWASP Top 10 vulnerabilities in modern web applications and APIs.",
-        "topics": ["OWASP Top 10", "Burp Suite", "SQL Injection", "XSS & CSRF", "Authentication Flaws"],
-        "recommended_course_ids": ["CRS-14"]
+        "phase": "Offensive & Defensive Security",
+        "title": "Vulnerability Testing & Ethical Hacking",
+        "description": "Identify configuration flaws, exploit vectors, and patch critical weaknesses.",
+        "topics": [
+          "Nmap & Port Scanning",
+          "OWASP Top 10",
+          "Vulnerability Scanners",
+          "Firewalls & IDS/IPS",
+          "Hardening"
+        ],
+        "recommended_course_ids": [
+          "CRS-15"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Governance & Threat Hunting",
+        "title": "Compliance, Risk & Proactive Defense",
+        "description": "Map adversaries using MITRE ATT&CK and ensure organizational compliance.",
+        "topics": [
+          "MITRE ATT&CK",
+          "Risk Management",
+          "Compliance (NIST/ISO)",
+          "Threat Hunting",
+          "Forensics Basics"
+        ],
+        "recommended_course_ids": [
+          "CRS-10",
+          "CRS-15"
+        ]
       }
     ]
   },
   "Mobile App Developer": {
-    "title": "Mobile App Developer Roadmap",
-    "description": "Build high-performance, polished native and cross-platform mobile applications.",
+    "title": "Mobile App Developer Career Roadmap",
+    "description": "Step-by-step path to build, test, and ship high-performance iOS and Android native apps.",
     "stages": [
       {
         "step": 1,
         "phase": "Foundations",
-        "title": "Object-Oriented Programming & Logic",
-        "description": "Solid algorithmic foundations, clean OOP, and data structures.",
-        "topics": ["Programming Paradigms", "Data Structures", "Memory Management", "Algorithms"],
-        "recommended_course_ids": ["CRS-03"]
+        "title": "Native Programming Languages",
+        "description": "Build fluency in modern type-safe languages designed for mobile.",
+        "topics": [
+          "Kotlin / Swift",
+          "OOP & Functional Concepts",
+          "Memory Management",
+          "Collections",
+          "Async Programming"
+        ],
+        "recommended_course_ids": [
+          "CRS-12",
+          "CRS-16"
+        ]
       },
       {
         "step": 2,
-        "phase": "Cross-Platform",
-        "title": "Flutter & Dart App Development",
-        "description": "Build reactive multi-platform applications for iOS and Android with single codebase.",
-        "topics": ["Dart Language", "Flutter Widgets", "State Management (Provider/Riverpod)", "Mobile UI/UX", "REST APIs"],
-        "recommended_course_ids": ["CRS-15"]
+        "phase": "Declarative UI Frameworks",
+        "title": "Modern UI & Navigation",
+        "description": "Design responsive, adaptive layouts with reactive component state.",
+        "topics": [
+          "Jetpack Compose / SwiftUI",
+          "Navigation Architecture",
+          "Material Design / Human Interface",
+          "State Handling",
+          "Animations"
+        ],
+        "recommended_course_ids": [
+          "CRS-12",
+          "CRS-16"
+        ]
       },
       {
         "step": 3,
-        "phase": "Native Android",
-        "title": "Modern Kotlin & Jetpack Compose",
-        "description": "Master declarative native Android UI, asynchronous Coroutines, and local Room databases.",
-        "topics": ["Kotlin", "Jetpack Compose", "Coroutines & Flow", "MVVM Architecture", "Room DB"],
-        "recommended_course_ids": ["CRS-16"]
+        "phase": "Data & Networking",
+        "title": "Local Storage & Cloud Sync",
+        "description": "Persist local data securely and communicate with backend web services.",
+        "topics": [
+          "Room / CoreData",
+          "REST & JSON Parsing",
+          "Repository Pattern",
+          "Background Workers",
+          "Push Notifications"
+        ],
+        "recommended_course_ids": [
+          "CRS-12",
+          "CRS-16"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Production & Quality",
+        "title": "Testing, Performance & Publishing",
+        "description": "Write automated UI tests, profile memory leaks, and submit to App Stores.",
+        "topics": [
+          "Unit & UI Testing",
+          "CI/CD for Mobile",
+          "Performance Profiling",
+          "App Store Guidelines",
+          "Crash Analytics"
+        ],
+        "recommended_course_ids": [
+          "CRS-12",
+          "CRS-16"
+        ]
+      }
+    ]
+  },
+  "Mechanical Design & CAD Engineer": {
+    "title": "Mechanical Design & CAD Engineer Roadmap",
+    "description": "Master industrial 3D CAD modeling, GD&T tolerancing, finite element analysis (FEA), and DFM.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Engineering Drafting & 3D Parametric CAD",
+        "description": "Learn 2D drafting, 3D parametric sketch constraints, part assemblies, and SolidWorks/Fusion 360.",
+        "topics": [
+          "Engineering Drawings",
+          "Parametric Modeling",
+          "Assembly Constraints",
+          "Bill of Materials (BOM)",
+          "CAD Standards"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME01"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Manufacturing Standards",
+        "title": "Geometric Dimensioning & Tolerancing (GD&T)",
+        "description": "Apply ASME Y14.5 dimensioning standards, tolerance stacks, and design for manufacturing.",
+        "topics": [
+          "GD&T Datums",
+          "Form & Location Tolerances",
+          "Tolerance Stacks",
+          "CNC Machining",
+          "Sheet Metal Design"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME06"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Structural Simulation",
+        "title": "Finite Element Analysis (FEA) with ANSYS",
+        "description": "Predict stress concentrations, deformation, thermal strain, and safety factors under static & dynamic loads.",
+        "topics": [
+          "FEA Meshing",
+          "Boundary Conditions",
+          "Von Mises Stress",
+          "Modal Analysis",
+          "ANSYS Mechanical"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME02",
+          "CRS-ME07"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Advanced Engineering",
+        "title": "Design Optimization & Prototype Verification",
+        "description": "Execute generative design, weight reduction, prototype testing, and production tooling sign-off.",
+        "topics": [
+          "Generative Design",
+          "Topology Optimization",
+          "Rapid Prototyping",
+          "Fatigue Life",
+          "DFM / DFA"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME01",
+          "CRS-ME02"
+        ]
+      }
+    ]
+  },
+  "Thermal & Fluid Systems (CFD) Engineer": {
+    "title": "Thermal & Fluid Systems (CFD) Engineer Roadmap",
+    "description": "Master applied thermodynamics, fluid mechanics, convective heat transfer, and industrial CFD simulation.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Thermodynamics & Fluid Dynamics",
+        "description": "Master fundamental energy equations, Navier-Stokes, Reynolds numbers, and power cycle analysis.",
+        "topics": [
+          "Mass & Energy Balances",
+          "Navier-Stokes Equations",
+          "Laminar & Turbulent Flow",
+          "Heat Conduction",
+          "Convection"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME05"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Thermal Design",
+        "title": "Heat Transfer & Power Cycles",
+        "description": "Design industrial heat exchangers, cooling jackets, and energy recovery cycles.",
+        "topics": [
+          "Heat Exchanger Sizing",
+          "LMTD & NTU Methods",
+          "Radiation Heat Transfer",
+          "Power Generation Cycles",
+          "Phase Change"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME05"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Computational Fluid Dynamics",
+        "title": "CFD Meshing, Physics & OpenFOAM",
+        "description": "Perform computational flow simulations, prism boundary layers, and turbulence modeling.",
+        "topics": [
+          "Structured Meshing",
+          "k-epsilon & k-omega SST",
+          "Boundary Layers (y+)",
+          "OpenFOAM / Fluent",
+          "Convergence Criteria"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME03"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Industrial Applications",
+        "title": "Conjugate Heat Transfer & Aerodynamics",
+        "description": "Simulate electronics cold plates, aerodynamic vehicle drag, and thermal management systems.",
+        "topics": [
+          "Conjugate Heat Transfer",
+          "Aerodynamic Drag Reduction",
+          "Transient Thermal Analysis",
+          "Validation & Verification"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME03",
+          "CRS-ME04"
+        ]
+      }
+    ]
+  },
+  "Automotive & Electric Vehicle (EV) Engineer": {
+    "title": "Automotive & Electric Vehicle (EV) Engineer Roadmap",
+    "description": "Comprehensive engineering roadmap for EV powertrain design, battery management systems, and vehicle dynamics.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Vehicle Dynamics & Powertrain Mechanics",
+        "description": "Calculate road loads, tractive force, transmission gear ratios, and chassis handling mechanics.",
+        "topics": [
+          "Tractive Effort",
+          "Rolling Resistance",
+          "Aerodynamic Drag",
+          "Powertrain Sizing",
+          "MATLAB Vehicle Modeling"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME05",
+          "CRS-ME01"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Battery Engineering",
+        "title": "Battery Management Systems (BMS)",
+        "description": "Model lithium-ion cells, implement State-of-Charge (SOC) estimation, and design thermal cooling circuits.",
+        "topics": [
+          "Lithium-Ion Chemistry",
+          "Equivalent Circuit Models",
+          "Kalman Filtering for SOC",
+          "Cell Balancing",
+          "Thermal Runaway Prevention"
+        ],
+        "recommended_course_ids": [
+          "CRS-ME04"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Electric Drives",
+        "title": "Traction Inverters & Motor Controls",
+        "description": "Control permanent magnet synchronous motors (PMSM) using space vector PWM and field-oriented control.",
+        "topics": [
+          "PMSM Motors",
+          "Field Oriented Control (FOC)",
+          "Inverter Topologies",
+          "Regenerative Braking",
+          "DC-DC Boosters"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE03",
+          "CRS-ME04"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Vehicle Integration",
+        "title": "CAN Bus, HIL Testing & Functional Safety",
+        "description": "Integrate vehicle electronic control units (ECUs), CAN network telemetry, and ISO 26262 compliance.",
+        "topics": [
+          "Automotive CAN Protocol",
+          "ECU Firmware",
+          "Hardware-in-the-Loop (HIL)",
+          "ISO 26262 Safety",
+          "Crashworthiness"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE02",
+          "CRS-ME02"
+        ]
+      }
+    ]
+  },
+  "Bioinformatics & Computational Biologist": {
+    "title": "Bioinformatics & Computational Biologist Roadmap",
+    "description": "Bridge biological data with algorithmic computer science, genomics pipelines, and drug discovery.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Python Programming & Biopython",
+        "description": "Master data structures, algorithms for sequence alignment, and biological database querying.",
+        "topics": [
+          "Python for Biology",
+          "Biopython",
+          "Dynamic Programming",
+          "Sequence Alignment (BLAST)",
+          "GenBank / FASTA Parsing"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT01",
+          "CRS-03"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Genomics & Statistics",
+        "title": "Next-Gen Sequencing (NGS) & Biostatistics",
+        "description": "Process high-throughput RNA-Seq and DNA variant datasets using statistical modeling in R.",
+        "topics": [
+          "FASTQ & BAM Processing",
+          "Variant Calling (GATK)",
+          "Differential Expression (DESeq2)",
+          "R Programming",
+          "Survival Analysis"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT07",
+          "CRS-BT01"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Structural Biology",
+        "title": "Protein Modeling & Molecular Docking",
+        "description": "Inspect 3D biomolecular structures and screen small-molecule drug candidates in silico.",
+        "topics": [
+          "PyMOL 3D Visualization",
+          "AutoDock / Vina",
+          "Homology Modeling",
+          "Molecular Dynamics (GROMACS)",
+          "Ligand Binding"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT05",
+          "CRS-BT03"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Genomic AI",
+        "title": "Machine Learning for Omics & Precision Medicine",
+        "description": "Deploy predictive machine learning models for disease biomarkers and personalized therapies.",
+        "topics": [
+          "Random Forests for Genomics",
+          "Deep Learning in Genomics",
+          "CRISPR Off-Target Scoring",
+          "Clinical Bioinformatics"
+        ],
+        "recommended_course_ids": [
+          "CRS-01",
+          "CRS-BT03"
+        ]
+      }
+    ]
+  },
+  "Bioprocess & Fermentation Engineer": {
+    "title": "Bioprocess & Fermentation Engineer Roadmap",
+    "description": "Design, optimize, and scale industrial biomanufacturing bioreactors, cell cultures, and protein purification.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Microbiology & Biochemical Stoichiometry",
+        "description": "Master cellular metabolism, substrate yield coefficients, and microbial growth kinetics.",
+        "topics": [
+          "Monod Growth Kinetics",
+          "Microbial Physiology",
+          "Stoichiometry of Growth",
+          "Enzyme Kinetics",
+          "Sterilization"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT02"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Bioreactor Design",
+        "title": "Fermentation Technology & Scale-Up",
+        "description": "Engineer stirred-tank bioreactors, oxygen mass transfer (kLa), agitation, and fed-batch control.",
+        "topics": [
+          "Bioreactor Sizing",
+          "Volumetric Mass Transfer",
+          "Impeller Power Consumption",
+          "Fed-Batch Strategies",
+          "Aeration"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT02",
+          "CRS-CH02"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Separation Processes",
+        "title": "Downstream Processing & Chromatography",
+        "description": "Purify high-value biological products through ultrafiltration and preparative column chromatography.",
+        "topics": [
+          "Cell Disruption",
+          "Centrifugation",
+          "Membrane Filtration",
+          "Affinity Chromatography",
+          "Protein Formulation"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT02",
+          "CRS-CH05"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Regulatory Quality",
+        "title": "Process Analytical Technology (PAT) & cGMP",
+        "description": "Ensure pharmaceutical cGMP compliance, process validation, and online sensor monitoring.",
+        "topics": [
+          "cGMP Regulations",
+          "Quality by Design (QbD)",
+          "PAT Sensors (NIR / Raman)",
+          "Batch Validation",
+          "FDA Submissions"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT02",
+          "CRS-ME06"
+        ]
+      }
+    ]
+  },
+  "Biomedical Devices & Instrumentation Engineer": {
+    "title": "Biomedical Devices & Instrumentation Engineer Roadmap",
+    "description": "Engineer physiological biosensors, patient monitoring hardware, diagnostic instruments, and FDA medical devices.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Bioinstrumentation Electronics & Signal Conditioning",
+        "description": "Design low-noise operational amplifier front-ends for microvolt-level biopotential signals (ECG/EEG).",
+        "topics": [
+          "Instrumentation Amplifiers",
+          "Active Analog Filters",
+          "Electrical Safety Standards",
+          "Noise Suppression",
+          "ECG / EMG"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT04",
+          "CRS-EE02"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Sensors & Diagnostics",
+        "title": "Biosensors & Lab-on-a-Chip",
+        "description": "Implement optical, electrochemical, and microfluidic sensors for point-of-care diagnostics.",
+        "topics": [
+          "Electrochemical Biosensors",
+          "Pulse Oximetry (PPG)",
+          "Microfluidics",
+          "Transducers",
+          "Signal Conversion"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT04",
+          "CRS-BT06"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Embedded Medical Systems",
+        "title": "DSP Filtering & Embedded Device Firmware",
+        "description": "Filter artifacts with digital signal processing algorithms running on low-power microcontrollers.",
+        "topics": [
+          "Digital Filters (FIR/IIR)",
+          "QRS Complex Detection",
+          "ARM Microcontrollers",
+          "Wireless Telemetry (BLE)",
+          "PCB Design"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE06",
+          "CRS-EE05"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Clinical Compliance",
+        "title": "ISO 13485 Compliance & Medical Device Verification",
+        "description": "Execute risk management, clinical testing verification, and regulatory compliance for medical devices.",
+        "topics": [
+          "ISO 13485 Standards",
+          "Risk Management (ISO 14971)",
+          "FDA 510(k) Clearances",
+          "Biocompatibility",
+          "Design Verification"
+        ],
+        "recommended_course_ids": [
+          "CRS-BT04",
+          "CRS-BT06"
+        ]
+      }
+    ]
+  },
+  "VLSI & Embedded Systems Engineer": {
+    "title": "VLSI & Embedded Systems Engineer Roadmap",
+    "description": "From digital logic gates and Verilog HDL to silicon synthesis, FPGA prototyping, and ARM embedded RTOS firmware.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Digital Logic & Verilog HDL",
+        "description": "Model sequential and combinational RTL circuits, testbenches, and finite state machines.",
+        "topics": [
+          "Boolean Algebra",
+          "Verilog HDL",
+          "FSM Design",
+          "Timing Constraints",
+          "Testbench Verification"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE01"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Embedded Firmware",
+        "title": "Microcontrollers & Bare-Metal C",
+        "description": "Write firmware for ARM Cortex-M microcontrollers interfacing with hardware registers and peripherals.",
+        "topics": [
+          "Bare-Metal C",
+          "ARM Cortex-M Architecture",
+          "Interrupts & Timers",
+          "I2C / SPI / UART",
+          "GPIO Interfacing"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE02"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Silicon Implementation",
+        "title": "FPGA Prototyping & ASIC Synthesis",
+        "description": "Synthesize digital systems onto FPGAs, close static timing constraints, and verify silicon behavior.",
+        "topics": [
+          "Static Timing Analysis (STA)",
+          "Clock Domain Crossing",
+          "FPGA Implementation",
+          "ASIC Flow",
+          "Synthesis"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE01",
+          "CRS-EE05"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Real-Time Systems",
+        "title": "Real-Time Operating Systems (RTOS) & PCB Layout",
+        "description": "Deploy multitasking FreeRTOS applications and design production printed circuit boards.",
+        "topics": [
+          "FreeRTOS Scheduling",
+          "Semaphores & Queues",
+          "Multi-layer PCB Design (KiCad)",
+          "Signal Integrity",
+          "Debugging"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE02",
+          "CRS-EE05"
+        ]
+      }
+    ]
+  },
+  "Power Systems & Renewable Energy Engineer": {
+    "title": "Power Systems & Renewable Energy Engineer Roadmap",
+    "description": "Analyze transmission power grids, integrate solar/wind renewable sources, and build smart power electronics.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Power System Analysis & Three-Phase Circuits",
+        "description": "Master AC transmission calculations, symmetrical components, power factor, and transformer operation.",
+        "topics": [
+          "Three-Phase AC Analysis",
+          "Per-Unit Systems",
+          "Transmission Lines",
+          "Transformers",
+          "Power Factor Correction"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE04"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Power Electronics",
+        "title": "Switched-Mode Converters & Inverters",
+        "description": "Design high-efficiency DC-DC converters and DC-AC grid-tie inverters with pulse-width modulation.",
+        "topics": [
+          "Buck / Boost Converters",
+          "Grid-Tie Inverters",
+          "PWM Strategies",
+          "MOSFET / IGBT Switching",
+          "Inductor Sizing"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE03"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Renewable Integration",
+        "title": "Solar PV, Wind & Energy Storage",
+        "description": "Optimize photovoltaic maximum power point tracking (MPPT) and battery energy storage system integration.",
+        "topics": [
+          "Solar PV Array Sizing",
+          "MPPT Algorithms",
+          "Wind Turbines",
+          "Battery Energy Storage (BESS)",
+          "Microgrids"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE04",
+          "CRS-ME04"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Smart Grid Protection",
+        "title": "Grid Stability, Protection & Modern SCADA",
+        "description": "Protect power equipment with digital protective relays and ensure grid frequency stability under disturbances.",
+        "topics": [
+          "Protective Relaying",
+          "Fault Calculations",
+          "Substation Automation",
+          "Grid Codes",
+          "Transient Stability"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE04",
+          "CRS-EE03"
+        ]
+      }
+    ]
+  },
+  "IoT & Hardware Systems Engineer": {
+    "title": "IoT & Hardware Systems Engineer Roadmap",
+    "description": "End-to-end roadmap for building smart connected sensor hardware, custom PCBs, and cloud telemetry gateways.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Microcontrollers & Sensor Interfacing",
+        "description": "Read environmental sensors, control actuators, and write embedded C++ on ESP32 microcontrollers.",
+        "topics": [
+          "ESP32 / Arduino",
+          "Sensor Calibration",
+          "ADC / DAC",
+          "PWM Motor Control",
+          "Serial Protocols"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE07",
+          "CRS-EE02"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Hardware Design",
+        "title": "Custom PCB Design with KiCad",
+        "description": "Route double-sided PCBs, design power supply stages, and generate production manufacturing files.",
+        "topics": [
+          "Schematic Creation",
+          "Component Footprints",
+          "PCB Trace Routing",
+          "Ground Planes",
+          "Gerber Generation"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE05"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Connectivity Protocols",
+        "title": "Wireless Protocols & Cloud Telemetry",
+        "description": "Stream telemetry to AWS IoT / GCP IoT using lightweight MQTT protocols over Wi-Fi and Bluetooth LE.",
+        "topics": [
+          "MQTT Protocol",
+          "TLS Security for IoT",
+          "Bluetooth Low Energy (BLE)",
+          "AWS IoT / Cloud Ingestion",
+          "HTTP REST"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE07",
+          "CRS-08"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Edge Computing",
+        "title": "TinyML & Ultra Low-Power Engineering",
+        "description": "Optimize power consumption for battery-operated field sensors and run on-device TinyML inference.",
+        "topics": [
+          "Deep Sleep Optimization",
+          "Battery Longevity",
+          "TinyML on Microcontrollers",
+          "Over-The-Air (OTA) Updates",
+          "Fleet Management"
+        ],
+        "recommended_course_ids": [
+          "CRS-EE07",
+          "CRS-01"
+        ]
+      }
+    ]
+  },
+  "Structural Analysis & BIM Engineer": {
+    "title": "Structural Analysis & BIM Engineer Roadmap",
+    "description": "Master structural analysis, earthquake engineering, ETABS/STAAD modeling, and Autodesk Revit BIM workflows.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Structural Mechanics & Reinforced Concrete",
+        "description": "Calculate internal forces, bending moments, deflections, and design reinforced concrete elements.",
+        "topics": [
+          "Indeterminate Structures",
+          "Moment Distribution",
+          "Limit State RC Design",
+          "Steel Design",
+          "Codes (IS 456 / ACI)"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE01"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Finite Element Modeling",
+        "title": "ETABS / STAAD Pro Structural Simulation",
+        "description": "Model multi-story buildings, assign seismic response spectra, and verify drift limits against wind loads.",
+        "topics": [
+          "3D Frame Analysis",
+          "Seismic Response Spectrum",
+          "Wind Load Analysis",
+          "Shear Wall Detailing",
+          "ETABS Simulation"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE01"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Digital Construction",
+        "title": "Building Information Modeling (BIM) with Revit",
+        "description": "Construct parametric BIM models, generate detailed rebar models, and coordinate with MEP disciplines.",
+        "topics": [
+          "Autodesk Revit Structure",
+          "Parametric Families",
+          "Clash Detection (Navisworks)",
+          "4D Scheduling",
+          "Rebar Detailing"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE02"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Foundation & Delivery",
+        "title": "Foundation Engineering & Construction Management",
+        "description": "Design raft and pile foundations and manage project budgets using Primavera P6.",
+        "topics": [
+          "Raft & Pile Foundations",
+          "Soil-Structure Interaction",
+          "Construction Scheduling (Primavera P6)",
+          "Quality Assurance"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE03",
+          "CRS-CE06"
+        ]
+      }
+    ]
+  },
+  "Transportation & Infrastructure Engineer": {
+    "title": "Transportation & Infrastructure Engineer Roadmap",
+    "description": "Plan highways, optimize traffic flow, design resilient pavement structures, and coordinate GIS networks.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Highway Geometric Design",
+        "description": "Calculate horizontal alignments, vertical crest/sag curves, super-elevation, and sight distances.",
+        "topics": [
+          "Horizontal Alignment",
+          "Super-Elevation",
+          "Sight Distances",
+          "IRC / AASHTO Guidelines",
+          "Cross-Section Geometry"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE04"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Traffic Systems",
+        "title": "Traffic Flow Theory & Intersection Modeling",
+        "description": "Evaluate capacity, level of service (LOS), signal timing splits, and roundabout designs.",
+        "topics": [
+          "Traffic Volume Studies",
+          "Level of Service (LOS)",
+          "Traffic Signal Design",
+          "Roundabouts",
+          "Traffic Simulation"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE04"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Pavement Materials",
+        "title": "Pavement Design & Subgrade Mechanics",
+        "description": "Design flexible asphalt and rigid concrete pavements based on traffic loading and soil CBR values.",
+        "topics": [
+          "CBR Soil Tests",
+          "Equivalent Axle Loads",
+          "Bituminous Pavements",
+          "Concrete Pavements",
+          "Drainage Design"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE04",
+          "CRS-CE03"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Urban Infrastructure",
+        "title": "GIS Transportation Planning & Project Management",
+        "description": "Map multimodal transit networks in QGIS and supervise construction execution schedules.",
+        "topics": [
+          "QGIS Spatial Analysis",
+          "Transit Network Planning",
+          "Primavera P6 Scheduling",
+          "Environmental Impact Studies"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE06",
+          "CRS-CE04"
+        ]
+      }
+    ]
+  },
+  "Environmental & Water Resources Engineer": {
+    "title": "Environmental & Water Resources Engineer Roadmap",
+    "description": "Design municipal water treatment plants, biological wastewater purification, and hydraulic flood management.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Environmental Chemistry & Water Quality",
+        "description": "Analyze chemical parameters (BOD, COD, heavy metals) and understand river self-purification mechanisms.",
+        "topics": [
+          "Water Quality Standards",
+          "BOD / COD Testing",
+          "Aquatic Chemistry",
+          "Sedimentation",
+          "Coagulation"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE05"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Potable Water Engineering",
+        "title": "Drinking Water Purification Plant Design",
+        "description": "Size clarifiers, rapid sand filtration beds, ozone/chlorine disinfection, and distribution networks.",
+        "topics": [
+          "Clarifier Sizing",
+          "Filtration Media",
+          "Disinfection Kinetics",
+          "Pipe Network Hydraulics",
+          "Pumping Stations"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE05"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Wastewater Treatment",
+        "title": "Biological Wastewater & Resource Recovery",
+        "description": "Design activated sludge processes, biological nutrient removal (BNR), and anaerobic biogas digestors.",
+        "topics": [
+          "Activated Sludge Process",
+          "Nitrogen & Phosphorus Removal",
+          "Membrane Bioreactors (MBR)",
+          "Sludge Anaerobic Digestion"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE05",
+          "CRS-BT02"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Hydrology & Drainage",
+        "title": "Stormwater Hydrology & Flood Risk Modeling",
+        "description": "Model catchment rainfall-runoff using EPA-SWMM and plan sustainable urban drainage systems (SUDS).",
+        "topics": [
+          "Hydrologic Cycle",
+          "Stormwater Modeling (SWMM)",
+          "Flood Mitigation",
+          "Urban Drainage",
+          "Groundwater Recharge"
+        ],
+        "recommended_course_ids": [
+          "CRS-CE05",
+          "CRS-CE04"
+        ]
+      }
+    ]
+  },
+  "Chemical Process & Plant Design Engineer": {
+    "title": "Chemical Process & Plant Design Engineer Roadmap",
+    "description": "Simulate chemical manufacturing plants in Aspen Plus, design industrial reactors, and ensure plant safety.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Thermodynamics & Material/Energy Balances",
+        "description": "Solve steady-state chemical mass balances, heat of reactions, and phase equilibria.",
+        "topics": [
+          "Mass Balances",
+          "Energy Balances",
+          "Vapor-Liquid Equilibrium (VLE)",
+          "Equation of State",
+          "Psychrometrics"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH01",
+          "CRS-ME05"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Reaction Engineering",
+        "title": "Chemical Reaction Kinetics & Reactor Design",
+        "description": "Size isothermal and non-isothermal batch, CSTR, and tubular catalytic reactors.",
+        "topics": [
+          "Reaction Kinetics",
+          "CSTR / PFR Sizing",
+          "Catalytic Mechanisms",
+          "Selectivity & Yield",
+          "Thermal Runaway Prevention"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH02"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Mass Transfer & Separation",
+        "title": "Distillation Columns & Flowsheet Simulation",
+        "description": "Model multi-component fractional distillation, absorption, and heat integration in Aspen Plus.",
+        "topics": [
+          "Distillation Column Design",
+          "McCabe-Thiele Method",
+          "Aspen Plus Flowsheeting",
+          "Heat Exchanger Networks",
+          "Liquid Extraction"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH01",
+          "CRS-CH05"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Plant Engineering",
+        "title": "P&ID Development, Hazop & Plant Economics",
+        "description": "Draft industrial Piping and Instrumentation Diagrams (P&ID), lead Hazop studies, and estimate capital costs.",
+        "topics": [
+          "P&ID Development",
+          "Hazop Safety Studies",
+          "Relief Systems",
+          "Capital Cost Estimation",
+          "Process Control"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH01",
+          "CRS-ME06"
+        ]
+      }
+    ]
+  },
+  "Materials Science & Nanotechnology Engineer": {
+    "title": "Materials Science & Nanotechnology Engineer Roadmap",
+    "description": "Synthesize advanced nanomaterials, manipulate alloy microstructures, and design high-performance composites.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Crystallography & Mechanical Behavior",
+        "description": "Understand atomic bonding, unit cells, dislocation motion, and mechanical deformation modes.",
+        "topics": [
+          "Crystal Structures (FCC/BCC/HCP)",
+          "Miller Indices",
+          "Stress-Strain Behavior",
+          "Dislocations & Slip",
+          "X-Ray Diffraction"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH03"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Phase Transformations",
+        "title": "Phase Diagrams & Alloy Metallurgy",
+        "description": "Analyze binary equilibrium phase diagrams, precipitation hardening, and steel heat treatment.",
+        "topics": [
+          "Iron-Carbon Diagram",
+          "TTT / CCT Diagrams",
+          "Precipitation Hardening",
+          "Quenching & Tempering",
+          "Corrosion Prevention"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH03"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Nanomaterials",
+        "title": "Nanoscale Synthesis & Electron Microscopy",
+        "description": "Synthesize carbon nanotubes, quantum dots, and 2D materials characterized by SEM and TEM.",
+        "topics": [
+          "CVD Synthesis",
+          "Nanoparticles & Quantum Dots",
+          "Scanning Electron Microscopy (SEM)",
+          "TEM Analysis",
+          "Surface Energy"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH04"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Functional Materials",
+        "title": "Advanced Composites & Energy Storage Materials",
+        "description": "Design fiber-reinforced composites, solid-state battery electrolytes, and failure analysis.",
+        "topics": [
+          "Polymer Composites",
+          "Battery Electrodes & Electrolytes",
+          "Fracture Mechanics",
+          "Failure Forensics",
+          "Biomaterials"
+        ],
+        "recommended_course_ids": [
+          "CRS-CH04",
+          "CRS-AE03"
+        ]
+      }
+    ]
+  },
+  "Aerospace & Propulsion Engineer": {
+    "title": "Aerospace & Propulsion Engineer Roadmap",
+    "description": "Design aerodynamic aircraft, rocket propulsion nozzles, orbital flight trajectories, and lightweight airframes.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Aerodynamics & Flight Mechanics",
+        "description": "Understand compressible flow, lift generation, airfoil polar curves, and aircraft longitudinal stability.",
+        "topics": [
+          "Incompressible Flow",
+          "Airfoil Camber & Lift",
+          "Shock Waves & Mach Number",
+          "Aircraft Equations of Motion",
+          "Glide Ratio"
+        ],
+        "recommended_course_ids": [
+          "CRS-AE01",
+          "CRS-ME03"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Rocket Propulsion",
+        "title": "Rocket Engines & Gas Dynamics",
+        "description": "Design supersonic de Laval nozzles, calculate thrust coefficient, and select liquid/solid propellants.",
+        "topics": [
+          "de Laval Nozzles",
+          "Specific Impulse (Isp)",
+          "Cryogenic Propellants",
+          "Combustion Chambers",
+          "Tsiolkovsky Equation"
+        ],
+        "recommended_course_ids": [
+          "CRS-AE02",
+          "CRS-ME05"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "Orbital Trajectories",
+        "title": "Astronautics & Orbital Mechanics",
+        "description": "Calculate Keplerian orbit transfers, planetary gravity assists, and satellite constellation design.",
+        "topics": [
+          "Kepler's Laws",
+          "Hohmann Transfer Orbits",
+          "Orbital Perturbations",
+          "Re-entry Aerothermodynamics",
+          "Attitude Control"
+        ],
+        "recommended_course_ids": [
+          "CRS-AE01"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Aerospace Structures",
+        "title": "Lightweight Composites & Aeroelasticity",
+        "description": "Engineer carbon-fiber wing spars, avoid flutter vibration instabilities, and ensure flight safety.",
+        "topics": [
+          "Thin-Walled Aircraft Structures",
+          "CFRP Composite Layups",
+          "Aeroelastic Flutter",
+          "Fatigue Analysis",
+          "Avionics Interfacing"
+        ],
+        "recommended_course_ids": [
+          "CRS-AE03",
+          "CRS-ME02"
+        ]
+      }
+    ]
+  },
+  "Robotics & Autonomous Systems Engineer": {
+    "title": "Robotics & Autonomous Systems Engineer Roadmap",
+    "description": "Master robotic manipulator kinematics, dynamics, trajectory planning, ROS 2, and autonomous lidar SLAM.",
+    "stages": [
+      {
+        "step": 1,
+        "phase": "Foundations",
+        "title": "Spatial Math & Manipulator Kinematics",
+        "description": "Calculate homogeneous transformations, DH parameters, forward and inverse kinematics of multi-axis arms.",
+        "topics": [
+          "Rotations & Quaternions",
+          "DH Convention",
+          "Forward Kinematics",
+          "Inverse Kinematics",
+          "Manipulator Jacobians"
+        ],
+        "recommended_course_ids": [
+          "CRS-RB01"
+        ]
+      },
+      {
+        "step": 2,
+        "phase": "Dynamics & Control",
+        "title": "Robot Dynamics & Feedback Control",
+        "description": "Formulate Lagrangian dynamics and implement closed-loop PID and computed torque motion controllers.",
+        "topics": [
+          "Lagrangian Dynamics",
+          "Inertia Matrix Calculation",
+          "PID Trajectory Tracking",
+          "Computed Torque Control",
+          "Motor Sizing"
+        ],
+        "recommended_course_ids": [
+          "CRS-RB01",
+          "CRS-RB03"
+        ]
+      },
+      {
+        "step": 3,
+        "phase": "ROS 2 & Sensors",
+        "title": "Robot Operating System (ROS 2) & Simulation",
+        "description": "Build ROS 2 nodes, simulate robot models in Gazebo, and interface depth cameras and 2D/3D lidar.",
+        "topics": [
+          "ROS 2 Nodes & Topics",
+          "URDF Robot Modeling",
+          "Gazebo Physics Simulation",
+          "Lidar & IMU Drivers",
+          "tf2 Transform Tree"
+        ],
+        "recommended_course_ids": [
+          "CRS-RB02",
+          "CRS-EE02"
+        ]
+      },
+      {
+        "step": 4,
+        "phase": "Autonomous Navigation",
+        "title": "SLAM, Path Planning & Autonomous Systems",
+        "description": "Deploy Cartographer SLAM, costmap navigation, A* / RRT obstacle avoidance, and field deployment.",
+        "topics": [
+          "Simultaneous Localization and Mapping (SLAM)",
+          "Nav2 Navigation Stack",
+          "RRT Path Planning",
+          "Obstacle Avoidance",
+          "Autonomous Hardware"
+        ],
+        "recommended_course_ids": [
+          "CRS-RB02",
+          "CRS-01"
+        ]
       }
     ]
   }
